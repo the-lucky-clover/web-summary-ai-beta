@@ -1,0 +1,269 @@
+{
+  "appName": {
+    "message": "ChatGPT Summarize",
+    "description": "The name of the web-extension (45)"
+  },
+  "appDesc": {
+    "message": "ChatGPT + DeepSeek kullanarak web siteleri/YouTube ile özetleme veya sohbet. AI Özet * OpenAI * PDF * Claude",
+    "description": "The descirption of the web-extension (132)"
+  },
+  "defaultQuestion": {
+    "message": "Çıktınız şu şablonu kullanmalı:\n- Emoji Madde İşareti\n\nSize verdiğim metni uygun miktarda özlü madde işaretlerinde özetleyin. Her madde işareti için uygun bir emoji seçin. Yanıtınız {{SELECTED_LANGUAGE}} dilinde olmalı. Şu içeriği kullanın: {{CONTENT}}",
+    "description": "The default question used for ChatGPT"
+  },
+  "defaultQuestionGPT4": {
+    "message": "Sağlanan metni özlü madde işaretlerine sıkıştırın, her biri için uygun bir emoji seçin ve {{SELECTED_LANGUAGE}} dilinde şu içerikle yanıt verin: {{CONTENT}}",
+    "description": "The default question used for ChatGPT4"
+  },
+  "defaultSystemMessage": {
+    "message": "",
+    "description": "The default System Message used for ChatGPT"
+  },
+  "thankYouForInstalling": {
+    "message": "Yüklediğiniz için teşekkürler",
+    "description": "Thank you message after installing the extension"
+  },
+  "pinExtensionTutorial": {
+    "message": "Başlamak için bu uzantıyı araç çubuğunuza sabitleyin.",
+    "description": "Tutorial message for pinning the extension to the toolbar"
+  },
+  "selectProviderToSummarize": {
+    "message": "Özetlemek için sağlayıcınızı seçin"
+  },
+  "installSuccess": {
+    "message": "Hazır! ChatGPT Suite ile herhangi bir web sayfasını veya YouTube videosunu tek tıkla özetleyin! <a>Sorular veya geri bildirim</a> için bizimle iletişime geçin. İyi özetlemeler!",
+    "description": "Success message after installing the extension"
+  },
+  "happySumarize": {
+    "message": "İyi özetlemeler"
+  },
+  "options": {
+    "message": "Seçenekler",
+    "description": "Used for opening the extension options"
+  },
+  "prompt": {
+    "message": "İstem",
+    "description": "Used for describing the prompt settings section"
+  },
+  "misc": {
+    "message": "Çeşitli",
+    "description": "Used for describing the misc settings section"
+  },
+  "memory": {
+    "message": "Bellek",
+    "description": "Used for describing the memory settings section"
+  },
+  "appearance": {
+    "message": "Görünüm",
+    "description": "Used for describing the appearance settings section"
+  },
+  "behaviour": {
+    "message": "Davranış",
+    "description": "Used for describing the behaviour settings section"
+  },
+  "chatGPTProviderDescription": {
+    "message": "ChatGPT web uygulamasını çalıştıran API, ücretsiz ama bazen kararsız",
+    "description": "Description of the ChatGPT API Provider"
+  },
+  "openAIProviderDescription": {
+    "message": "OpenAI resmi API'si, daha kararlı, kullanıma göre ücret",
+    "description": "Description of the OpenAI API Provider"
+  },
+  "apiKey": {
+    "message": "API Anahtarı",
+    "description": "Used for selecting the API Key"
+  },
+  "question": {
+    "message": "Soru",
+    "description": "Used for selecting the question"
+  },
+  "systemMessage": {
+    "message": "Sistem Mesajı",
+    "description": "Used for selecting the System Message"
+  },
+  "model": {
+    "message": "Model",
+    "description": "Used for selecting the model"
+  },
+  "save": {
+    "message": "Kaydet",
+    "description": "Used for saving the extension options"
+  },
+  "reset": {
+    "message": "Sıfırla",
+    "description": "Used for resetting the extension options"
+  },
+  "aiProvider": {
+    "message": "AI Sağlayıcı",
+    "description": "Used for selecting the AI provider"
+  },
+  "loading": {
+    "message": "Yükleniyor...",
+    "description": "Status message used when loading"
+  },
+  "moreInfo": {
+    "message": "Daha Fazla Bilgi",
+    "description": "Used for opening a new modal with more info"
+  },
+  "requestOpenAIProvider": {
+    "message": "OpenAI zaman zaman güvenlik kontrolü gerektirir. Bu durum devam ederse, uzantı seçeneklerinde AI sağlayıcısını OpenAI API olarak değiştirin.",
+    "description": "Status message when failed to load response from OpenAI second time in a row"
+  },
+  "waitingForChatGPTResponse": {
+    "message": "ChatGPT yanıtı bekleniyor...",
+    "description": "Status message used when waiting for ChatGPT response"
+  },
+  "failedToLoadResponseFromChatGPT": {
+    "message": "ChatGPT'den yanıt yüklenemedi",
+    "description": "Status message used when failed to load response from ChatGPT"
+  },
+  "extractingPageContent": {
+    "message": "Sayfa içeriği çıkarılıyor...",
+    "description": "Status message used when extracting page content"
+  },
+  "info": {
+    "message": "Bilgi"
+  },
+  "tryItNow": {
+    "message": "Şimdi deneyin",
+    "description": "Action button used after successful installation"
+  },
+  "rateExtensionInWebstore": {
+    "message": "Bu uzantıyı beğendiniz mi? Bize 5 yıldız verin"
+  },
+  "recommendExtension": {
+    "message": "özetle? Lütfen <a>uzantıyı</a> paylaşın"
+  },
+  "refreshOpenAILogin": {
+    "message": "Lütfen <a>chatgpt.com</a>'da giriş yapın ve Cloudflare kontrolünü geçin"
+  },
+  "refreshDeepSeekChatLogin": {
+    "message": "Lütfen <a>chat.deepseek.com</a>'da giriş yapın ve Cloudflare kontrolünü geçin"
+  },
+  "copy": {
+    "message": "Kopyala",
+    "description": "Used for copying text to clipboard"
+  },
+  "retry": {
+    "message": "Yeniden Dene",
+    "description": "Used invalidating a ChatGPT answer"
+  },
+  "summarize": {
+    "message": "Özetle",
+    "description": "Tab label"
+  },
+  "chat": {
+    "message": "Sohbet",
+    "description": "Tab label"
+  },
+  "close": {
+    "message": "Kapat",
+    "description": "Used for closing the extension popup"
+  },
+  "chatgptLoggedIn": {
+    "message": "ChatGPT giriş yapıldı"
+  },
+  "chatgptNotLoggedIn": {
+    "message": "ChatGPT giriş yapılmadı"
+  },
+  "login": {
+    "message": "Giriş Yap"
+  },
+  "useOpenAiApi": {
+    "message": "OpenAI API Anahtarınızı kullanın"
+  },
+  "originalTranscript": {
+    "message": "Transkript",
+    "description": "Tab label"
+  },
+  "summarizeText": {
+    "message": "Seçili metni özetle"
+  },
+  "summarizeAll": {
+    "message": "Tümünü özetle"
+  },
+  "summarizeNextBatch": {
+    "message": "Sonraki grubu özetle"
+  },
+  "summarized": {
+    "message": "Özetlendi"
+  },
+  "authenticateChatGPT": {
+    "message": "Lütfen ChatGPT kullanarak kimlik doğrulaması yapın"
+  },
+  "addOpenAIKey": {
+    "message": "Lütfen OpenAI API Anahtarınızı ekleyin"
+  },
+  "addDeepSeekAPIKey": {
+    "message": "Lütfen DeepSeek API Anahtarınızı ekleyin"
+  },
+  "ready": {
+    "message": "Hazır"
+  },
+  "howToObtainKey": {
+    "message": "API Anahtarınızı nasıl edineceğiniz"
+  },
+  "wrongApiKey": {
+    "message": "Modeller getirilemedi. Lütfen API anahtarınızı kontrol edin."
+  },
+  "showYoutubeButton": {
+    "message": "YouTube özet butonunu göster"
+  },
+  "showSummarizeButton": {
+    "message": "Yüzen özet butonunu göster"
+  },
+  "summarizeFullText": {
+    "message": "Her zaman tam metni özetle"
+  },
+  "availableAskQuestion": {
+    "message": "Yalnızca OpenAI API sağlayıcısı ile kullanılabilir"
+  },
+  "askQuestion": {
+    "message": "Soru sor (Beta)"
+  },
+  "askQuestionIntro": {
+    "message": "Merhaba! 🤖 Bu sayfanın içeriği hakkındaki sorularınızı yanıtlamak için buradayım. Bugün size nasıl yardımcı olabilirim?"
+  },
+  "summary": {
+    "message": "Özet"
+  },
+  "alertAskQuestion": {
+    "message": "Bu özelliğe erişmek için seçenekler sayfasından sağlayıcınız olarak OpenAI API'yi seçin."
+  },
+  "suggestionOpenAI": {
+    "message": "Daha güvenilir sonuçlar için OpenAI API'yi kullanın!"
+  },
+  "timeoutError": {
+    "message": "Üzgünüz, özetleme isteğiniz zaman aşımına uğradı. Bu durum ağ gecikmeleri veya yüksek hizmet talebi nedeniyle oluşabilir. Lütfen isteğinizi daha sonra yeniden gönderin."
+  },
+  "chatGPTwelcome": {
+    "message": "ChatGPT Arayüzü (Varsayılan)"
+  },
+  "chatGPTperks": {
+    "message": "ücretsiz ve yavaş"
+  },
+  "OpenAIwelcome": {
+    "message": "OpenAI API Anahtarı"
+  },
+  "OpenAIperks": {
+    "message": "önerilen, hızlı (API Anahtarınızı buradan alın"
+  },
+  "DeepSeekAPIwelcome": {
+    "message": "DeepSeek API Anahtarı"
+  },
+  "DeepSeekAPIperks": {
+    "message": "API Anahtarınızı buradan alın"
+  },
+  "DeepSeekChatWelcome": {
+    "message": "DeepSeek Sohbet Arayüzü"
+  },
+  "DeepSeekChatPerks": {
+    "message": "ücretsiz ve yavaş"
+  },
+  "here": {
+    "message": "buradan"
+  },
+  "missingYoutubeTranscription": {
+    "message": "YouTube videosunda eksik transkript nedeniyle, bu özeti sağlamak için sayfa içeriği kullanıldı"
+  }
+}

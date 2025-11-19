@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YTldr API Settings</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';">
+  <meta name="referrer" content="no-referrer">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #6366f1;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #374151;
+    }
+    input[type="password"], input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border-color 0.2s;
+    }
+    input:focus {
+      outline: none;
+      border-color: #6366f1;
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    }
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      margin-right: 10px;
+      transition: transform 0.2s;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    .btn-danger {
+      background: #ef4444;
+      color: white;
+    }
+    .alert {
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+    .alert-success {
+      background-color: #d1fae5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+    }
+    .alert-error {
+      background-color: #fee2e2;
+      color: #991b1b;
+      border: 1px solid #fecaca;
+    }
+    .help-text {
+      font-size: 14px;
+      color: #6b7280;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+    .password-toggle {
+      position: relative;
+    }
+    .password-toggle input {
+      padding-right: 50px;
+    }
+    .password-toggle button {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .security-info {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 20px;
+    }
+    .security-info h3 {
+      margin: 0 0 12px 0;
+      color: #374151;
+    }
+    .security-info ul {
+      margin: 0;
+      padding-left: 20px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>YTldr Gemini API Settings</h1>
+    <div id="alert"></div>
+
+    <div class="form-group">
+      <label for="apiKey">Google Gemini Flash 2.5 API Key</label>
+      <div class="password-toggle">
+        <input type="password" id="apiKey" placeholder="Enter your Gemini API key">
+        <button type="button" id="toggleVisibility">👁️</button>
+      </div>
+      <div class="help-text">
+        <strong>How to get your API key:</strong><br>
+        1. Visit <a href="https://makersuite.google.com/app/apikey" target="_blank">Google AI Studio</a><br>
+        2. Sign in with your Google account<br>
+        3. Click "Create API key"<br>
+        4. Copy the generated key and paste it here<br><br>
+        <em>🔒 Your API key is stored securely in Firefox's encrypted storage and never shared.</em>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-primary" id="saveBtn">Save API Key</button>
+      <button class="btn btn-danger" id="clearBtn">Clear API Key</button>
+    </div>
+
+    <div class="security-info">
+      <h3>🔒 Security & Privacy</h3>
+      <ul>
+        <li>API keys are stored locally in Firefox's secure encrypted storage</li>
+        <li>Keys are never transmitted except to Google's Gemini API</li>
+        <li>No data collection or tracking - privacy-first design</li>
+        <li>All processing happens locally on your device</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const apiKeyInput = document.getElementById('apiKey');
+    const toggleBtn = document.getElementById('toggleVisibility');
+    const saveBtn = document.getElementById('saveBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const alertDiv = document.getElementById('alert');
+
+    let isVisible = false;
+
+    // Load existing API key
+    browser.storage.local.get(['geminiApiKey'], (result) => {
+      if (result.geminiApiKey) {
+        apiKeyInput.value = result.geminiApiKey;
+      }
+    });
+
+    // Toggle password visibility
+    toggleBtn.addEventListener('click', () => {
+      isVisible = !isVisible;
+      apiKeyInput.type = isVisible ? 'text' : 'password';
+      toggleBtn.textContent = isVisible ? '🙈' : '👁️';
+    });
+
+    // Save API key
+    saveBtn.addEventListener('click', async () => {
+      const apiKey = apiKeyInput.value.trim();
+
+      if (!apiKey) {
+        showAlert('Please enter an API key', 'error');
+        return;
+      }
+
+      if (!/^AIza[0-9A-Za-z\-_]{35}$/.test(apiKey)) {
+        showAlert('Invalid Gemini API key format', 'error');
+        return;
+      }
+
+      try {
+        await browser.storage.local.set({
+          geminiApiKey: apiKey,
+          lastUpdated: Date.now()
+        });
+
+        showAlert('API key saved securely!', 'success');
+        apiKeyInput.value = ''; // Clear for security
+      } catch (error) {
+        showAlert('Failed to save API key', 'error');
+      }
+    });
+
+    // Clear API key
+    clearBtn.addEventListener('click', async () => {
+      try {
+        await browser.storage.local.remove(['geminiApiKey', 'lastUpdated']);
+        apiKeyInput.value = '';
+        showAlert('API key cleared securely', 'success');
+      } catch (error) {
+        showAlert('Failed to clear API key', 'error');
+      }
+    });
+
+    function showAlert(message, type) {
+      alertDiv.innerHTML = `<div class="alert alert-${type}">${message}</div>`;
+      setTimeout(() => {
+        alertDiv.innerHTML = '';
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

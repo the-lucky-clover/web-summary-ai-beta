@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YTldr Summarizer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>YTldr</h1>
+      <p>Privacy-First AI Summarization</p>
+    </header>
+
+    <div id="main-content">
+      <div id="api-key-section">
+        <h2>Gemini API Key</h2>
+        <div class="setting-group">
+          <label for="api-key">API Key:</label>
+          <input type="password" id="api-key" placeholder="Enter your Gemini API key">
+          <button id="toggle-visibility">👁️</button>
+        </div>
+        <button id="save-api-key">Save API Key</button>
+        <small>Get your API key from <a href="https://makersuite.google.com/app/apikey" target="_blank">Google AI Studio</a></small>
+      </div>
+
+      <div id="summarize-section">
+        <h2>Summarize Current Page</h2>
+        <button id="summarize-page">Summarize Page</button>
+        <div id="summary-result" style="display: none;">
+          <h3>Summary:</h3>
+          <div id="summary-text"></div>
+        </div>
+      </div>
+
+      <div id="batch-section">
+        <h2>Batch Summarization</h2>
+        <textarea id="batch-urls" placeholder="Enter URLs (one per line)"></textarea>
+        <button id="batch-summarize">Summarize URLs</button>
+        <div id="batch-results" style="display: none;"></div>
+      </div>
+
+      <div id="privacy-section">
+        <h2>Privacy & Transparency</h2>
+        <button id="view-logs">View Activity Logs</button>
+        <button id="clear-logs">Clear Logs</button>
+        <div id="logs-display" style="display: none;">
+          <pre id="logs-content"></pre>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>🔒 Privacy-first. No data harvesting. Powered by Google Gemini Flash 2.5</p>
+      <p><a href="https://ytldr.com" target="_blank">Visit YTldr.com</a></p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+{
+  "appName": {
+    "message": "ChatGPT Summarize",
+    "description": "The name of the web-extension (45)"
+  },
+  "appDesc": {
+    "message": "ChatGPT sammendrag eller chat med nettsider/YouTube ved ChatGPT + DeepSeek. AI Sammendrag * OpenAI * PDF * Claude",
+    "description": "The descirption of the web-extension (132)"
+  },
+  "defaultQuestion": {
+    "message": "Utdataene dine bør bruke følgende mal:\n- Emoji Punktliste\n\nSammendrag teksten jeg gir deg i en passende mengde konsise punkter. Velg en passende emoji for hvert punkt. Svaret ditt skal være på {{SELECTED_LANGUAGE}}. Bruk følgende innhold: {{CONTENT}}",
+    "description": "The default question used for ChatGPT"
+  },
+  "defaultQuestionGPT4": {
+    "message": "Kondens den oppgitte teksten til konsise punkter, velg en passende emoji for hver, og svar på {{SELECTED_LANGUAGE}} ved å bruke innholdet: {{CONTENT}}",
+    "description": "The default question used for ChatGPT4"
+  },
+  "defaultSystemMessage": {
+    "message": "",
+    "description": "The default System Message used for ChatGPT"
+  },
+  "thankYouForInstalling": {
+    "message": "Takk for at du installerer",
+    "description": "Thank you message after installing the extension"
+  },
+  "pinExtensionTutorial": {
+    "message": "Fest denne utvidelsen til verktøylinjen din for å komme i gang.",
+    "description": "Tutorial message for pinning the extension to the toolbar"
+  },
+  "selectProviderToSummarize": {
+    "message": "Velg din leverandør for å sammendrage"
+  },
+  "installSuccess": {
+    "message": "Klar! Sammendrag hvilken som helst nettside eller YouTube-video med ett klikk ved hjelp av ChatGPT Suite! Kontakt oss for <a>spørsmål eller tilbakemelding</a>. Lykke til med sammendragene!",
+    "description": "Success message after installing the extension"
+  },
+  "happySumarize": {
+    "message": "Lykke til med sammendragene"
+  },
+  "options": {
+    "message": "Alternativer",
+    "description": "Used for opening the extension options"
+  },
+  "prompt": {
+    "message": "Prompt",
+    "description": "Used for describing the prompt settings section"
+  },
+  "misc": {
+    "message": "Diverse",
+    "description": "Used for describing the misc settings section"
+  },
+  "memory": {
+    "message": "Minne",
+    "description": "Used for describing the memory settings section"
+  },
+  "appearance": {
+    "message": "Utseende",
+    "description": "Used for describing the appearance settings section"
+  },
+  "behaviour": {
+    "message": "Oppførsel",
+    "description": "Used for describing the behaviour settings section"
+  },
+  "chatGPTProviderDescription": {
+    "message": "API-en som driver ChatGPT-webappen, gratis men noen ganger ustabil",
+    "description": "Description of the ChatGPT API Provider"
+  },
+  "openAIProviderDescription": {
+    "message": "OpenAI offisiell API, mer stabil, betaler per bruk",
+    "description": "Description of the OpenAI API Provider"
+  },
+  "apiKey": {
+    "message": "API-nøkkel",
+    "description": "Used for selecting the API Key"
+  },
+  "question": {
+    "message": "Spørsmål",
+    "description": "Used for selecting the question"
+  },
+  "systemMessage": {
+    "message": "Systemmelding",
+    "description": "Used for selecting the System Message"
+  },
+  "model": {
+    "message": "Modell",
+    "description": "Used for selecting the model"
+  },
+  "save": {
+    "message": "Lagre",
+    "description": "Used for saving the extension options"
+  },
+  "reset": {
+    "message": "Tilbakestill",
+    "description": "Used for resetting the extension options"
+  },
+  "aiProvider": {
+    "message": "AI-leverandør",
+    "description": "Used for selecting the AI provider"
+  },
+  "loading": {
+    "message": "Laster...",
+    "description": "Status message used when loading"
+  },
+  "moreInfo": {
+    "message": "Mer informasjon",
+    "description": "Used for opening a new modal with more info"
+  },
+  "requestOpenAIProvider": {
+    "message": "OpenAI krever at du passerer en sikkerhetskontroll av og til. Hvis dette fortsetter å skje, endre AI-leverandør til OpenAI API i utvidelsesalternativene.",
+    "description": "Status message when failed to load response from OpenAI second time in a row"
+  },
+  "waitingForChatGPTResponse": {
+    "message": "Venter på ChatGPT-svar...",
+    "description": "Status message used when waiting for ChatGPT response"
+  },
+  "failedToLoadResponseFromChatGPT": {
+    "message": "Klarte ikke å laste svar fra ChatGPT",
+    "description": "Status message used when failed to load response from ChatGPT"
+  },
+  "extractingPageContent": {
+    "message": "Trekker ut sideinnhold...",
+    "description": "Status message used when extracting page content"
+  },
+  "info": {
+    "message": "Info"
+  },
+  "tryItNow": {
+    "message": "Prøv det nå",
+    "description": "Action button used after successful installation"
+  },
+  "rateExtensionInWebstore": {
+    "message": "Liker du denne utvidelsen? Gi oss en 5-stjerners vurdering"
+  },
+  "recommendExtension": {
+    "message": "med sammendraget? Del <a>utvidelsen</a>"
+  },
+  "refreshOpenAILogin": {
+    "message": "Logg inn og bestå Cloudflare-sjekken på <a>chatgpt.com</a>"
+  },
+  "refreshDeepSeekChatLogin": {
+    "message": "Logg inn og bestå Cloudflare-sjekken på <a>chat.deepseek.com</a>"
+  },
+  "copy": {
+    "message": "Kopier",
+    "description": "Used for copying text to clipboard"
+  },
+  "retry": {
+    "message": "Prøv igjen",
+    "description": "Used invalidating a ChatGPT answer"
+  },
+  "summarize": {
+    "message": "Sammendrag",
+    "description": "Tab label"
+  },
+  "chat": {
+    "message": "Chat",
+    "description": "Tab label"
+  },
+  "close": {
+    "message": "Lukk",
+    "description": "Used for closing the extension popup"
+  },
+  "chatgptLoggedIn": {
+    "message": "ChatGPT innlogget"
+  },
+  "chatgptNotLoggedIn": {
+    "message": "ChatGPT ikke innlogget"
+  },
+  "login": {
+    "message": "Logg inn"
+  },
+  "useOpenAiApi": {
+    "message": "Bruk din OpenAI API-nøkkel"
+  },
+  "originalTranscript": {
+    "message": "Transkripsjon",
+    "description": "Tab label"
+  },
+  "summarizeText": {
+    "message": "Sammendrag valgt tekst"
+  },
+  "summarizeAll": {
+    "message": "Sammendrag alt"
+  },
+  "summarizeNextBatch": {
+    "message": "Sammendrag neste gruppe"
+  },
+  "summarized": {
+    "message": "Sammendragsført"
+  },
+  "authenticateChatGPT": {
+    "message": "Vennligst autentiser ved hjelp av ChatGPT"
+  },
+  "addOpenAIKey": {
+    "message": "Vennligst legg til din OpenAI API-nøkkel"
+  },
+  "addDeepSeekAPIKey": {
+    "message": "Vennligst legg til din DeepSeek API-nøkkel"
+  },
+  "ready": {
+    "message": "Klar"
+  },
+  "howToObtainKey": {
+    "message": "Hvordan skaffe din API-nøkkel"
+  },
+  "wrongApiKey": {
+    "message": "Kunne ikke hente modeller. Sjekk din API-nøkkel."
+  },
+  "showYoutubeButton": {
+    "message": "Vis YouTube sammendragsknapp"
+  },
+  "showSummarizeButton": {
+    "message": "Vis flytende sammendragsknapp"
+  },
+  "summarizeFullText": {
+    "message": "Sammendrag alltid full tekst"
+  },
+  "availableAskQuestion": {
+    "message": "Kun tilgjengelig med OpenAI API-leverandør"
+  },
+  "askQuestion": {
+    "message": "Still et spørsmål (Beta)"
+  },
+  "askQuestionIntro": {
+    "message": "Hei! 🤖 Jeg er her for å hjelpe med å svare på spørsmål om innholdet på denne siden. Hvordan kan jeg hjelpe deg i dag?"
+  },
+  "summary": {
+    "message": "Sammendrag"
+  },
+  "alertAskQuestion": {
+    "message": "For å få tilgang til denne funksjonen, velg OpenAI API som leverandør på alternativsiden."
+  },
+  "suggestionOpenAI": {
+    "message": "Bruk OpenAI API for mer pålitelige resultater!"
+  },
+  "timeoutError": {
+    "message": "Beklager, sammendragsforespørselen din ble tidsavbrutt. Dette kan skje på grunn av nettverksforsinkelser eller høy tjeneste-etterspørsel. Prøv å sende forespørselen din igjen senere."
+  },
+  "chatGPTwelcome": {
+    "message": "ChatGPT-grensesnitt (Standard)"
+  },
+  "chatGPTperks": {
+    "message": "gratis og treg"
+  },
+  "OpenAIwelcome": {
+    "message": "OpenAI API-nøkkel"
+  },
+  "OpenAIperks": {
+    "message": "anbefalt, rask (få din API-nøkkel her"
+  },
+  "DeepSeekAPIwelcome": {
+    "message": "DeepSeek API-nøkkel"
+  },
+  "DeepSeekAPIperks": {
+    "message": "få din API-nøkkel her"
+  },
+  "DeepSeekChatWelcome": {
+    "message": "DeepSeek Chat-grensesnitt"
+  },
+  "DeepSeekChatPerks": {
+    "message": "gratis og treg"
+  },
+  "here": {
+    "message": "her"
+  },
+  "missingYoutubeTranscription": {
+    "message": "På grunn av manglende transkripsjon i YouTube-video, har sideinnhold blitt brukt for å gi dette sammendraget"
+  }
+}

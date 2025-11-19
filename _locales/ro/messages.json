@@ -1,0 +1,269 @@
+{
+  "appName": {
+    "message": "ChatGPT Summarize",
+    "description": "The name of the web-extension (45)"
+  },
+  "appDesc": {
+    "message": "ChatGPT rezumă sau conversează cu site-uri/YouTube folosind ChatGPT + DeepSeek. Rezumat * AI Rezumat * OpenAI * Rezumat PDF * Claude",
+    "description": "The descirption of the web-extension (132)"
+  },
+  "defaultQuestion": {
+    "message": "Rezultatul tău ar trebui să folosească următorul format:\n- Punct cu Emoji\n\nRezumă textul pe care ți-l dau într-un număr adecvat de puncte concise. Alege un emoji potrivit pentru fiecare punct. Răspunsul tău ar trebui să fie în {{SELECTED_LANGUAGE}}. Folosește următorul conținut: {{CONTENT}}",
+    "description": "The default question used for ChatGPT"
+  },
+  "defaultQuestionGPT4": {
+    "message": "Condensează textul furnizat în puncte concise, selectând un emoji potrivit pentru fiecare și răspunde în {{SELECTED_LANGUAGE}} folosind conținutul: {{CONTENT}}",
+    "description": "The default question used for ChatGPT4"
+  },
+  "defaultSystemMessage": {
+    "message": "",
+    "description": "The default System Message used for ChatGPT"
+  },
+  "thankYouForInstalling": {
+    "message": "Mulțumesc pentru instalare",
+    "description": "Thank you message after installing the extension"
+  },
+  "pinExtensionTutorial": {
+    "message": "Fixează această extensie în bara de instrumente pentru a începe.",
+    "description": "Tutorial message for pinning the extension to the toolbar"
+  },
+  "selectProviderToSummarize": {
+    "message": "Te rog alege furnizorul pentru a rezuma"
+  },
+  "installSuccess": {
+    "message": "Gata! Rezumă orice pagină web sau videoclip YouTube cu un singur clic folosind ChatGPT Suite! Contactează-ne pentru orice <a>întrebări sau feedback</a>. Rezumare fericită!",
+    "description": "Success message after installing the extension"
+  },
+  "happySumarize": {
+    "message": "Rezumare fericită"
+  },
+  "options": {
+    "message": "Opțiuni",
+    "description": "Used for opening the extension options"
+  },
+  "prompt": {
+    "message": "Prompt",
+    "description": "Used for describing the prompt settings section"
+  },
+  "misc": {
+    "message": "Diverse",
+    "description": "Used for describing the misc settings section"
+  },
+  "memory": {
+    "message": "Memorie",
+    "description": "Used for describing the memory settings section"
+  },
+  "appearance": {
+    "message": "Aspect",
+    "description": "Used for describing the appearance settings section"
+  },
+  "behaviour": {
+    "message": "Comportament",
+    "description": "Used for describing the behaviour settings section"
+  },
+  "chatGPTProviderDescription": {
+    "message": "API-ul care alimentează aplicația web ChatGPT, gratuit, dar uneori instabil",
+    "description": "Description of the ChatGPT API Provider"
+  },
+  "openAIProviderDescription": {
+    "message": "API oficial OpenAI, mai stabil, se taxează pe utilizare",
+    "description": "Description of the OpenAI API Provider"
+  },
+  "apiKey": {
+    "message": "Cheie API",
+    "description": "Used for selecting the API Key"
+  },
+  "question": {
+    "message": "Întrebare",
+    "description": "Used for selecting the question"
+  },
+  "systemMessage": {
+    "message": "Mesaj de sistem",
+    "description": "Used for selecting the System Message"
+  },
+  "model": {
+    "message": "Model",
+    "description": "Used for selecting the model"
+  },
+  "save": {
+    "message": "Salvează",
+    "description": "Used for saving the extension options"
+  },
+  "reset": {
+    "message": "Resetează",
+    "description": "Used for resetting the extension options"
+  },
+  "aiProvider": {
+    "message": "Furnizor AI",
+    "description": "Used for selecting the AI provider"
+  },
+  "loading": {
+    "message": "Se încarcă...",
+    "description": "Status message used when loading"
+  },
+  "moreInfo": {
+    "message": "Mai multe informații",
+    "description": "Used for opening a new modal with more info"
+  },
+  "requestOpenAIProvider": {
+    "message": "OpenAI necesită trecerea unei verificări de securitate din când în când. Dacă se întâmplă în continuare, schimbă furnizorul AI la OpenAI API în opțiunile extensiei.",
+    "description": "Status message when failed to load response from OpenAI second time in a row"
+  },
+  "waitingForChatGPTResponse": {
+    "message": "Așteptând răspuns ChatGPT...",
+    "description": "Status message used when waiting for ChatGPT response"
+  },
+  "failedToLoadResponseFromChatGPT": {
+    "message": "Eșuat la încărcarea răspunsului de la ChatGPT",
+    "description": "Status message used when failed to load response from ChatGPT"
+  },
+  "extractingPageContent": {
+    "message": "Extragere conținut pagină...",
+    "description": "Status message used when extracting page content"
+  },
+  "info": {
+    "message": "Informații"
+  },
+  "tryItNow": {
+    "message": "Încearcă acum",
+    "description": "Action button used after successful installation"
+  },
+  "rateExtensionInWebstore": {
+    "message": "Îți place această extensie? Dă-ne o notă de 5 stele"
+  },
+  "recommendExtension": {
+    "message": "cu rezumatul? Te rog distribuie <a>extensia</a>"
+  },
+  "refreshOpenAILogin": {
+    "message": "Te rog autentifică-te și treci verificarea Cloudflare la <a>chatgpt.com</a>"
+  },
+  "refreshDeepSeekChatLogin": {
+    "message": "Te rog autentifică-te și treci verificarea Cloudflare la <a>chat.deepseek.com</a>"
+  },
+  "copy": {
+    "message": "Copiază",
+    "description": "Used for copying text to clipboard"
+  },
+  "retry": {
+    "message": "Reîncearcă",
+    "description": "Used invalidating a ChatGPT answer"
+  },
+  "summarize": {
+    "message": "Rezumă",
+    "description": "Tab label"
+  },
+  "chat": {
+    "message": "Chat",
+    "description": "Tab label"
+  },
+  "close": {
+    "message": "Închide",
+    "description": "Used for closing the extension popup"
+  },
+  "chatgptLoggedIn": {
+    "message": "ChatGPT conectat"
+  },
+  "chatgptNotLoggedIn": {
+    "message": "ChatGPT neconectat"
+  },
+  "login": {
+    "message": "Autentificare"
+  },
+  "useOpenAiApi": {
+    "message": "Folosește cheia ta OpenAI API"
+  },
+  "originalTranscript": {
+    "message": "Transcriere",
+    "description": "Tab label"
+  },
+  "summarizeText": {
+    "message": "Rezumă textul selectat"
+  },
+  "summarizeAll": {
+    "message": "Rezumă tot"
+  },
+  "summarizeNextBatch": {
+    "message": "Rezumă următorul lot"
+  },
+  "summarized": {
+    "message": "Rezumat"
+  },
+  "authenticateChatGPT": {
+    "message": "Te rog autentifică-te folosind ChatGPT"
+  },
+  "addOpenAIKey": {
+    "message": "Te rog adaugă cheia ta OpenAI API"
+  },
+  "addDeepSeekAPIKey": {
+    "message": "Te rog adaugă cheia ta DeepSeek API"
+  },
+  "ready": {
+    "message": "Gata"
+  },
+  "howToObtainKey": {
+    "message": "Cum să obții cheia ta API"
+  },
+  "wrongApiKey": {
+    "message": "Nu s-au putut prelua modelele. Te rog verifică cheia ta API."
+  },
+  "showYoutubeButton": {
+    "message": "Arată butonul de rezumare YouTube"
+  },
+  "showSummarizeButton": {
+    "message": "Arată butonul de rezumare flotant"
+  },
+  "summarizeFullText": {
+    "message": "Rezumă întotdeauna textul complet"
+  },
+  "availableAskQuestion": {
+    "message": "Disponibil doar cu furnizorul OpenAI API"
+  },
+  "askQuestion": {
+    "message": "Pune întrebare (Beta)"
+  },
+  "askQuestionIntro": {
+    "message": "Salut! 🤖 Sunt aici să te ajut să răspund la orice întrebări despre conținutul acestei pagini. Cum te pot ajuta astăzi?"
+  },
+  "summary": {
+    "message": "Rezumat"
+  },
+  "alertAskQuestion": {
+    "message": "Pentru a accesa această funcție, te rog selectează OpenAI API ca furnizorul tău în pagina de opțiuni."
+  },
+  "suggestionOpenAI": {
+    "message": "Folosește OpenAI API pentru rezultate mai fiabile!"
+  },
+  "timeoutError": {
+    "message": "Ne pare rău, cererea ta de rezumare a expirat. Acest lucru se poate întâmpla din cauza întârzierilor de rețea sau a cererii mari de servicii. Te rog încearcă să trimiți cererea din nou mai târziu."
+  },
+  "chatGPTwelcome": {
+    "message": "Interfață ChatGPT (Implicit)"
+  },
+  "chatGPTperks": {
+    "message": "gratuit și lent"
+  },
+  "OpenAIwelcome": {
+    "message": "Cheie OpenAI API"
+  },
+  "OpenAIperks": {
+    "message": "recomandat, rapid (obține cheia ta API chiar"
+  },
+  "DeepSeekAPIwelcome": {
+    "message": "Cheie DeepSeek API"
+  },
+  "DeepSeekAPIperks": {
+    "message": "obține cheia ta API chiar"
+  },
+  "DeepSeekChatWelcome": {
+    "message": "Interfață DeepSeek Chat"
+  },
+  "DeepSeekChatPerks": {
+    "message": "gratuit și lent"
+  },
+  "here": {
+    "message": "aici"
+  },
+  "missingYoutubeTranscription": {
+    "message": "Din cauza lipsei transcrierii în videoclipul YouTube, conținutul paginii a fost folosit pentru a furniza acest rezumat"
+  }
+}

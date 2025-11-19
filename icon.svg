@@ -1,0 +1,55 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f5ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f5ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:0.8" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background dark circle with glow -->
+  <circle cx="64" cy="64" r="60" fill="#0a0e27" opacity="0.95"/>
+  <circle cx="64" cy="64" r="58" fill="none" stroke="url(#cyberGrad)" stroke-width="3" filter="url(#glow)"/>
+  
+  <!-- AI Brain Circuit Pattern -->
+  <!-- Left hemisphere -->
+  <path d="M 40 45 Q 35 50 40 55 L 45 55 Q 50 50 45 45 Z" fill="url(#glowGrad)" opacity="0.9"/>
+  <circle cx="42" cy="50" r="3" fill="#00f5ff" filter="url(#glow)"/>
+  
+  <!-- Right hemisphere -->
+  <path d="M 88 45 Q 93 50 88 55 L 83 55 Q 78 50 83 45 Z" fill="url(#glowGrad)" opacity="0.9"/>
+  <circle cx="86" cy="50" r="3" fill="#ff00ff" filter="url(#glow)"/>
+  
+  <!-- Center neural network -->
+  <circle cx="64" cy="50" r="8" fill="none" stroke="url(#cyberGrad)" stroke-width="2" filter="url(#glow)"/>
+  <circle cx="64" cy="50" r="4" fill="url(#glowGrad)"/>
+  
+  <!-- Connection lines -->
+  <line x1="50" y1="50" x2="58" y2="50" stroke="#00f5ff" stroke-width="2" opacity="0.7" filter="url(#glow)"/>
+  <line x1="70" y1="50" x2="78" y2="50" stroke="#ff00ff" stroke-width="2" opacity="0.7" filter="url(#glow)"/>
+  
+  <!-- Document/Summary Lines -->
+  <g opacity="0.9">
+    <rect x="35" y="68" width="58" height="3" rx="1.5" fill="url(#cyberGrad)" filter="url(#glow)"/>
+    <rect x="35" y="76" width="48" height="3" rx="1.5" fill="url(#cyberGrad)" filter="url(#glow)"/>
+    <rect x="35" y="84" width="52" height="3" rx="1.5" fill="url(#cyberGrad)" filter="url(#glow)"/>
+    <rect x="35" y="92" width="42" height="3" rx="1.5" fill="url(#cyberGrad)" filter="url(#glow)"/>
+  </g>
+  
+  <!-- Lightning bolt accent (AI power) -->
+  <path d="M 68 35 L 62 50 L 68 50 L 64 60 L 70 48 L 64 48 Z" fill="#00f5ff" filter="url(#glow)" opacity="0.9"/>
+  
+  <!-- Hexagon frame (cyber aesthetic) -->
+  <path d="M 64 25 L 80 33 L 80 49 L 64 57 L 48 49 L 48 33 Z" fill="none" stroke="url(#cyberGrad)" stroke-width="1.5" opacity="0.5"/>
+</svg>

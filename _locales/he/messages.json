@@ -1,0 +1,269 @@
+{
+  "appName": {
+    "message": "ChatGPT Summarize",
+    "description": "The name of the web-extension (45)"
+  },
+  "appDesc": {
+    "message": "ChatGPT סיכום או צ'אט עם אתרים/Youtube באמצעות ChatGPT + DeepSeek. סיכום * AI סיכום * OpenAI * PDF סיכום * Claude",
+    "description": "The descirption of the web-extension (132)"
+  },
+  "defaultQuestion": {
+    "message": "הפלט שלך צריך להשתמש בתבנית הבאה:\n- אימוג'י תור\n\nסכם את הטקסט שאני נותן לך בכמות מתאימה של נקודות קצרות. בחר אימוג'י מתאים לכל נקודה. התשובה שלך צריכה להיות ב-{{SELECTED_LANGUAGE}}. השתמש בתוכן הבא: {{CONTENT}}",
+    "description": "The default question used for ChatGPT"
+  },
+  "defaultQuestionGPT4": {
+    "message": "צמצם את הטקסט המסופק לנקודות קצרות, בחר אימוג'י מתאים לכל אחד, וענה ב-{{SELECTED_LANGUAGE}} באמצעות התוכן: {{CONTENT}}",
+    "description": "The default question used for ChatGPT4"
+  },
+  "defaultSystemMessage": {
+    "message": "",
+    "description": "The default System Message used for ChatGPT"
+  },
+  "thankYouForInstalling": {
+    "message": "תודה על ההתקנה",
+    "description": "Thank you message after installing the extension"
+  },
+  "pinExtensionTutorial": {
+    "message": "הצמד הרחבה זו לסריג הכלים שלך כדי להתחיל.",
+    "description": "Tutorial message for pinning the extension to the toolbar"
+  },
+  "selectProviderToSummarize": {
+    "message": "אנא בחר את הספק שלך לסיכום"
+  },
+  "installSuccess": {
+    "message": "מוכן! סכם כל דף אינטרנט או סרטון YouTube בלחיצה אחת באמצעות ChatGPT Suite! צר קשר עמנו לכל <a>שאלה או משוב</a>. סיכום מוצלח!",
+    "description": "Success message after installing the extension"
+  },
+  "happySumarize": {
+    "message": "סיכום מוצלח"
+  },
+  "options": {
+    "message": "אפשרויות",
+    "description": "Used for opening the extension options"
+  },
+  "prompt": {
+    "message": "הנחיה",
+    "description": "Used for describing the prompt settings section"
+  },
+  "misc": {
+    "message": "שונות",
+    "description": "Used for describing the misc settings section"
+  },
+  "memory": {
+    "message": "זיכרון",
+    "description": "Used for describing the memory settings section"
+  },
+  "appearance": {
+    "message": "מראה",
+    "description": "Used for describing the appearance settings section"
+  },
+  "behaviour": {
+    "message": "התנהגות",
+    "description": "Used for describing the behaviour settings section"
+  },
+  "chatGPTProviderDescription": {
+    "message": "ה-API שמפעיל את היישום ChatGPT, חינם, אך לפעמים לא יציב",
+    "description": "Description of the ChatGPT API Provider"
+  },
+  "openAIProviderDescription": {
+    "message": "OpenAI API רשמי, יציב יותר, תשלום לפי שימוש",
+    "description": "Description of the OpenAI API Provider"
+  },
+  "apiKey": {
+    "message": "מפתח API",
+    "description": "Used for selecting the API Key"
+  },
+  "question": {
+    "message": "שאלה",
+    "description": "Used for selecting the question"
+  },
+  "systemMessage": {
+    "message": "הודעת מערכת",
+    "description": "Used for selecting the System Message"
+  },
+  "model": {
+    "message": "מודל",
+    "description": "Used for selecting the model"
+  },
+  "save": {
+    "message": "שמור",
+    "description": "Used for saving the extension options"
+  },
+  "reset": {
+    "message": "איפוס",
+    "description": "Used for resetting the extension options"
+  },
+  "aiProvider": {
+    "message": "ספק AI",
+    "description": "Used for selecting the AI provider"
+  },
+  "loading": {
+    "message": "טוען...",
+    "description": "Status message used when loading"
+  },
+  "moreInfo": {
+    "message": "מידע נוסף",
+    "description": "Used for opening a new modal with more info"
+  },
+  "requestOpenAIProvider": {
+    "message": "OpenAI דורש לעבור בדיקת ביטחון מפעם לפעם. אם זה ממשיך לקרות, שנה ספק AI ל-OpenAI API באפשרויות ההרחבה.",
+    "description": "Status message when failed to load response from OpenAI second time in a row"
+  },
+  "waitingForChatGPTResponse": {
+    "message": "ממתין לתשובת ChatGPT...",
+    "description": "Status message used when waiting for ChatGPT response"
+  },
+  "failedToLoadResponseFromChatGPT": {
+    "message": "נישל בטעינת תשובה מ-ChatGPT",
+    "description": "Status message used when failed to load response from ChatGPT"
+  },
+  "extractingPageContent": {
+    "message": "מחלץ תוכן דף...",
+    "description": "Status message used when extracting page content"
+  },
+  "info": {
+    "message": "מידע"
+  },
+  "tryItNow": {
+    "message": "נסה עכשיו",
+    "description": "Action button used after successful installation"
+  },
+  "rateExtensionInWebstore": {
+    "message": "נהנית מההרחבה? תן לנו דירוג של 5 כוכבים"
+  },
+  "recommendExtension": {
+    "message": "עם הסיכום? אנא שתף את <a>ההרחבה</a>"
+  },
+  "refreshOpenAILogin": {
+    "message": "אנא התחבר ועבור בדיקת Cloudflare ב-<a>chatgpt.com</a>"
+  },
+  "refreshDeepSeekChatLogin": {
+    "message": "אנא התחבר ועבור בדיקת Cloudflare ב-<a>chat.deepseek.com</a>"
+  },
+  "copy": {
+    "message": "העתק",
+    "description": "Used for copying text to clipboard"
+  },
+  "retry": {
+    "message": "נסה שוב",
+    "description": "Used invalidating a ChatGPT answer"
+  },
+  "summarize": {
+    "message": "סיכום",
+    "description": "Tab label"
+  },
+  "chat": {
+    "message": "צ'אט",
+    "description": "Tab label"
+  },
+  "close": {
+    "message": "סגור",
+    "description": "Used for closing the extension popup"
+  },
+  "chatgptLoggedIn": {
+    "message": "ChatGPT מחובר"
+  },
+  "chatgptNotLoggedIn": {
+    "message": "ChatGPT לא מחובר"
+  },
+  "login": {
+    "message": "התחברות"
+  },
+  "useOpenAiApi": {
+    "message": "השתמש במפתח OpenAI API שלך"
+  },
+  "originalTranscript": {
+    "message": "תמליל",
+    "description": "Tab label"
+  },
+  "summarizeText": {
+    "message": "סכם טקסט נבחר"
+  },
+  "summarizeAll": {
+    "message": "סכם הכול"
+  },
+  "summarizeNextBatch": {
+    "message": "סכם את האצווה הבאה"
+  },
+  "summarized": {
+    "message": "מסוכם"
+  },
+  "authenticateChatGPT": {
+    "message": "אנא אמת באמצעות ChatGPT"
+  },
+  "addOpenAIKey": {
+    "message": "אנא הוסף את מפתח OpenAI API שלך"
+  },
+  "addDeepSeekAPIKey": {
+    "message": "אנא הוסף את מפתח DeepSeek API שלך"
+  },
+  "ready": {
+    "message": "מוכן"
+  },
+  "howToObtainKey": {
+    "message": "איך לקבל את מפתח ה-API שלך"
+  },
+  "wrongApiKey": {
+    "message": "לא ניתן לטעון מודלים. אנא בדוק את מפתח ה-API שלך."
+  },
+  "showYoutubeButton": {
+    "message": "הצג כפתור סיכום YouTube"
+  },
+  "showSummarizeButton": {
+    "message": "הצג כפתור סיכום צף"
+  },
+  "summarizeFullText": {
+    "message": "תמיד סכם טקסט מלא"
+  },
+  "availableAskQuestion": {
+    "message": "זמין רק עם ספק OpenAI API"
+  },
+  "askQuestion": {
+    "message": "שאל שאלה (בטא)"
+  },
+  "askQuestionIntro": {
+    "message": "שלום! 🤖 אני כאן כדי לעזור לענות על כל שאלה שיש לך לגבי תוכן הדף הזה. איך אני יכול לעזור לך היום?"
+  },
+  "summary": {
+    "message": "סיכום"
+  },
+  "alertAskQuestion": {
+    "message": "כדי לגשת לתכונה זו, אנא בחר ב-OpenAI API כספק שלך בדף האפשרויות."
+  },
+  "suggestionOpenAI": {
+    "message": "השתמש ב-OpenAI API לתוצאות אמינות יותר!"
+  },
+  "timeoutError": {
+    "message": "סליחה, בקשת הסיכום שלך פסקה. זה יכול לקרות בשל עיכובים ברשת או דרישה גבוהה לשירות. אנא נסה לשלוח את הבקשה שוב מאוחר יותר."
+  },
+  "chatGPTwelcome": {
+    "message": "ממשק ChatGPT (ברירת מחדל)"
+  },
+  "chatGPTperks": {
+    "message": "חינם ואיטי"
+  },
+  "OpenAIwelcome": {
+    "message": "מפתח OpenAI API"
+  },
+  "OpenAIperks": {
+    "message": "מומלץ, מהיר (קבל את מפתח ה-API שלך כאן"
+  },
+  "DeepSeekAPIwelcome": {
+    "message": "מפתח DeepSeek API"
+  },
+  "DeepSeekAPIperks": {
+    "message": "קבל את מפתח ה-API שלך כאן"
+  },
+  "DeepSeekChatWelcome": {
+    "message": "ממשק צ'אט DeepSeek"
+  },
+  "DeepSeekChatPerks": {
+    "message": "חינם ואיטי"
+  },
+  "here": {
+    "message": "כאן"
+  },
+  "missingYoutubeTranscription": {
+    "message": "בשל חיסר תמליל בסרטון YouTube, השתמשנו בתוכן הדף למתן הסיכום הזה"
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "appName": {
+    "message": "ChatGPT Summarize",
+    "description": "The name of the web-extension (45)"
+  },
+  "appDesc": {
+    "message": "ChatGPT + DeepSeek વાપરીને વેબસાઈટ / Youtube સાથે સારાંશ અથવા ચેટ કરો. Summary * AI Summarize * OpenAI * PDF Summary * Claude",
+    "description": "The descirption of the web-extension (132)"
+  },
+  "defaultQuestion": {
+    "message": "તમારા આઉટપુટમાં નીચેનું ટેમ્પલેટ વાપરવું જોઈએ:\n- Emoji Bulletpoint\n\nમને આપેલા ટેક્સ્ટને યોગ્ય સંખ્યાના સંક્ષિપ્ત બુલેટ પોઇન્ટમાં સારાંશ આપો. દરેક બુલેટ પોઇન્ટ માટે યોગ્ય ઇમોજી પસંદ કરો. તમારો જવાબ {{SELECTED_LANGUAGE}}માં હોવો જોઈએ. નીચેની સામગ્રી વાપરો: {{CONTENT}}",
+    "description": "The default question used for ChatGPT"
+  },
+  "defaultQuestionGPT4": {
+    "message": "આપેલા ટેક્સ્ટને સંક્ષિપ્ત બુલેટ પોઇન્ટમાં સંકુચિત કરો, દરેક માટે યોગ્ય ઇમોજી પસંદ કરો, અને {{SELECTED_LANGUAGE}}માં સામગ્રી વાપરીને જવાબ આપો: {{CONTENT}}",
+    "description": "The default question used for ChatGPT4"
+  },
+  "defaultSystemMessage": {
+    "message": "",
+    "description": "The default System Message used for ChatGPT"
+  },
+  "thankYouForInstalling": {
+    "message": "ઇન્સ્ટોલ કરવા બદલ આભાર",
+    "description": "Thank you message after installing the extension"
+  },
+  "pinExtensionTutorial": {
+    "message": "શરૂ કરવા માટે આ એક્સટેન્શનને તમારા ટૂલબારમાં પિન કરો.",
+    "description": "Tutorial message for pinning the extension to the toolbar"
+  },
+  "selectProviderToSummarize": {
+    "message": "કૃપા કરીને સારાંશ માટે તમારો પ્રદાતા પસંદ કરો"
+  },
+  "installSuccess": {
+    "message": "તૈયાર! ChatGPT Suite વાપરીને કોઈપણ વેબપેજ અથવા Youtube વિડિયોનો એક ક્લિકમાં સારાંશ મેળવો! કોઈપણ <a>પ્રશ્નો અથવા પ્રતિક્રિયા</a> માટે અમારો સંપર્ક કરો. ખુશ સારાંશ લેવો!",
+    "description": "Success message after installing the extension"
+  },
+  "happySumarize": {
+    "message": "ખુશ સારાંશ"
+  },
+  "options": {
+    "message": "વિકલ્પો",
+    "description": "Used for opening the extension options"
+  },
+  "prompt": {
+    "message": "પ્રોમ્પ્ટ",
+    "description": "Used for describing the prompt settings section"
+  },
+  "misc": {
+    "message": "વિવિધ",
+    "description": "Used for describing the misc settings section"
+  },
+  "memory": {
+    "message": "મેમરી",
+    "description": "Used for describing the memory settings section"
+  },
+  "appearance": {
+    "message": "દેખાવ",
+    "description": "Used for describing the appearance settings section"
+  },
+  "behaviour": {
+    "message": "વર્તન",
+    "description": "Used for describing the behaviour settings section"
+  },
+  "chatGPTProviderDescription": {
+    "message": "ChatGPT webapp ને શક્તિ આપતો API, મફત, પરંતુ ક્યારેક અસ્થિર",
+    "description": "Description of the ChatGPT API Provider"
+  },
+  "openAIProviderDescription": {
+    "message": "OpenAI અધિકૃત API, વધુ સ્થિર, ઉપયોગ દ્વારા ચાર્જ",
+    "description": "Description of the OpenAI API Provider"
+  },
+  "apiKey": {
+    "message": "API કી",
+    "description": "Used for selecting the API Key"
+  },
+  "question": {
+    "message": "પ્રશ્ન",
+    "description": "Used for selecting the question"
+  },
+  "systemMessage": {
+    "message": "સિસ્ટમ સંદેશ",
+    "description": "Used for selecting the System Message"
+  },
+  "model": {
+    "message": "મોડલ",
+    "description": "Used for selecting the model"
+  },
+  "save": {
+    "message": "સેવ કરો",
+    "description": "Used for saving the extension options"
+  },
+  "reset": {
+    "message": "રીસેટ કરો",
+    "description": "Used for resetting the extension options"
+  },
+  "aiProvider": {
+    "message": "AI પ્રદાતા",
+    "description": "Used for selecting the AI provider"
+  },
+  "loading": {
+    "message": "લોડ થઈ રહ્યું છે...",
+    "description": "Status message used when loading"
+  },
+  "moreInfo": {
+    "message": "વધુ જાણકારી",
+    "description": "Used for opening a new modal with more info"
+  },
+  "requestOpenAIProvider": {
+    "message": "OpenAI ને સમયાંતરે સુરક્ષા ચકાસણી પાસ કરવાની જરૂર છે. જો આ થતું રહે, તો એક્સટેન્શન વિકલ્પોમાં AI પ્રદાતાને OpenAI API માં બદલો.",
+    "description": "Status message when failed to load response from OpenAI second time in a row"
+  },
+  "waitingForChatGPTResponse": {
+    "message": "ChatGPT પ્રતિસાદની રાહ જોઈ રહ્યા છે...",
+    "description": "Status message used when waiting for ChatGPT response"
+  },
+  "failedToLoadResponseFromChatGPT": {
+    "message": "ChatGPT થી પ્રતિસાદ લોડ કરવામાં નિષ્ફળ",
+    "description": "Status message used when failed to load response from ChatGPT"
+  },
+  "extractingPageContent": {
+    "message": "પેજ સામગ્રી નિકાસ કરી રહ્યા છે...",
+    "description": "Status message used when extracting page content"
+  },
+  "info": {
+    "message": "માહિતી"
+  },
+  "tryItNow": {
+    "message": "હવે પ્રયાસ કરો",
+    "description": "Action button used after successful installation"
+  },
+  "rateExtensionInWebstore": {
+    "message": "આ એક્સટેન્શન પસંદ છે? અમને 5-સ્ટાર રેટિંગ આપો"
+  },
+  "recommendExtension": {
+    "message": "સારાંશ સાથે? કૃપા કરીને <a>એક્સટેન્શન</a> શેર કરો"
+  },
+  "refreshOpenAILogin": {
+    "message": "કૃપા કરીને <a>chatgpt.com</a> પર લોગિન કરો અને Cloudflare ચેક પાસ કરો"
+  },
+  "refreshDeepSeekChatLogin": {
+    "message": "કૃપા કરીને <a>chat.deepseek.com</a> પર લોગિન કરો અને Cloudflare ચેક પાસ કરો"
+  },
+  "copy": {
+    "message": "કોપી કરો",
+    "description": "Used for copying text to clipboard"
+  },
+  "retry": {
+    "message": "ફરી પ્રયાસ કરો",
+    "description": "Used invalidating a ChatGPT answer"
+  },
+  "summarize": {
+    "message": "સારાંશ",
+    "description": "Tab label"
+  },
+  "chat": {
+    "message": "ચેટ",
+    "description": "Tab label"
+  },
+  "close": {
+    "message": "બંધ કરો",
+    "description": "Used for closing the extension popup"
+  },
+  "chatgptLoggedIn": {
+    "message": "ChatGPT લોગ ઇન છે"
+  },
+  "chatgptNotLoggedIn": {
+    "message": "ChatGPT લોગ ઇન નથી"
+  },
+  "login": {
+    "message": "લોગ ઇન"
+  },
+  "useOpenAiApi": {
+    "message": "તમારી OpenAI API કી વાપરો"
+  },
+  "originalTranscript": {
+    "message": "ટ્રાન્સ્ક્રિપ્ટ",
+    "description": "Tab label"
+  },
+  "summarizeText": {
+    "message": "પસંદ કરેલા ટેક્સ્ટનો સારાંશ આપો"
+  },
+  "summarizeAll": {
+    "message": "બધાનો સારાંશ આપો"
+  },
+  "summarizeNextBatch": {
+    "message": "આગલા બેચનો સારાંશ આપો"
+  },
+  "summarized": {
+    "message": "સારાંશ આપ્યો"
+  },
+  "authenticateChatGPT": {
+    "message": "કૃપા કરીને ChatGPT વાપરીને પ્રમાણિત કરો"
+  },
+  "addOpenAIKey": {
+    "message": "કૃપા કરીને તમારી OpenAI API કી ઉમેરો"
+  },
+  "addDeepSeekAPIKey": {
+    "message": "કૃપા કરીને તમારી DeepSeek API કી ઉમેરો"
+  },
+  "ready": {
+    "message": "તૈયાર"
+  },
+  "howToObtainKey": {
+    "message": "તમારી API કી કેવી રીતે મેળવવી"
+  },
+  "wrongApiKey": {
+    "message": "મોડલ મેળવી શક્યા નથી. કૃપા કરીને તમારી API કી તપાસો."
+  },
+  "showYoutubeButton": {
+    "message": "YouTube સારાંશ બટન બતાવો"
+  },
+  "showSummarizeButton": {
+    "message": "ફ્લોટિંગ સારાંશ બટન બતાવો"
+  },
+  "summarizeFullText": {
+    "message": "હંમેશા સંપૂર્ણ ટેક્સ્ટનો સારાંશ આપો"
+  },
+  "availableAskQuestion": {
+    "message": "માત્ર OpenAI API પ્રદાતા સાથે ઉપલબ્ધ"
+  },
+  "askQuestion": {
+    "message": "પ્રશ્ન પૂછો (બેટા)"
+  },
+  "askQuestionIntro": {
+    "message": "નમસ્તે! 🤖 આ પેજની સામગ્રી વિશે તમારા કોઈપણ પ્રશ્નોના જવાબ આપવા માટે હું અહીં છું. આજે હું તમારી કેવી રીતે સહાય કરી શકું?"
+  },
+  "summary": {
+    "message": "સારાંશ"
+  },
+  "alertAskQuestion": {
+    "message": "આ સુવિધાને ઍક્સેસ કરવા માટે, કૃપા કરીને વિકલ્પો પેજમાં તમારા પ્રદાતા તરીકે OpenAI API પસંદ કરો."
+  },
+  "suggestionOpenAI": {
+    "message": "વધુ વિશ્વસનીય પરિણામો માટે OpenAI API વાપરો!"
+  },
+  "timeoutError": {
+    "message": "માફ કરશો, તમારી સારાંશ વિનંતીનો સમય સમાપ્ત થઈ ગયો છે. આ નેટવર્ક વિલંબ અથવા ઊંચી સેવા માંગને કારણે થઈ શકે છે. કૃપા કરીને પછીથી તમારી વિનંતી ફરીથી સબમિટ કરવાનો પ્રયાસ કરો."
+  },
+  "chatGPTwelcome": {
+    "message": "ChatGPT ઇન્ટરફેસ (ડિફોલ્ટ)"
+  },
+  "chatGPTperks": {
+    "message": "મફત અને ધીમું"
+  },
+  "OpenAIwelcome": {
+    "message": "OpenAI API કી"
+  },
+  "OpenAIperks": {
+    "message": "ભલામણ, ઝડપી (તમારી API કી અહીં મેળવો"
+  },
+  "DeepSeekAPIwelcome": {
+    "message": "DeepSeek API કી"
+  },
+  "DeepSeekAPIperks": {
+    "message": "તમારી API કી અહીં મેળવો"
+  },
+  "DeepSeekChatWelcome": {
+    "message": "DeepSeek ચેટ ઇન્ટરફેસ"
+  },
+  "DeepSeekChatPerks": {
+    "message": "મફત અને ધીમું"
+  },
+  "here": {
+    "message": "અહીં"
+  },
+  "missingYoutubeTranscription": {
+    "message": "YouTube વિડિયોમાં ટ્રાન્સક્રિપ્શન અનુપસ્થિત હોવાને કારણે, આ સારાંશ પ્રદાન કરવા માટે પેજ સામગ્રીનો ઉપયોગ કરવામાં આવ્યો છે"
+  }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Web Summary AI - Icon Generator</title>
+  <style>
+    body {
+      font-family: 'Orbitron', monospace;
+      background: linear-gradient(135deg, #0a0e27 0%, #1a1d3a 50%, #0d1b2a 100%);
+      color: #00f5ff;
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 20px rgba(0, 245, 255, 0.8);
+    }
+    .icon-preview {
+      display: inline-block;
+      margin: 20px;
+      padding: 20px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 2px solid #6366f1;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+    }
+    canvas {
+      border: 1px solid #00f5ff;
+      margin: 10px;
+      box-shadow: 0 0 15px rgba(0, 245, 255, 0.4);
+    }
+    button {
+      background: linear-gradient(135deg, #00f5ff 0%, #ff00ff 100%);
+      color: #0a0e27;
+      border: none;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      box-shadow: 0 5px 20px rgba(0, 245, 255, 0.6);
+    }
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 245, 255, 0.8);
+    }
+    .info {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚡ Web Summary AI - Icon Generator</h1>
+  <p style="color: #a5b4fc; font-size: 18px;">Cyberpunk 2077 Inspired Icons</p>
+  
+  <div class="icon-preview">
+    <h3>128x128</h3>
+    <canvas id="canvas128" width="128" height="128"></canvas>
+    <br>
+    <button onclick="downloadIcon(128)">Download 128x128</button>
+  </div>
+  
+  <div class="icon-preview">
+    <h3>48x48</h3>
+    <canvas id="canvas48" width="48" height="48"></canvas>
+    <br>
+    <button onclick="downloadIcon(48)">Download 48x48</button>
+  </div>
+  
+  <div class="icon-preview">
+    <h3>32x32</h3>
+    <canvas id="canvas32" width="32" height="32"></canvas>
+    <br>
+    <button onclick="downloadIcon(32)">Download 32x32</button>
+  </div>
+  
+  <div class="icon-preview">
+    <h3>16x16</h3>
+    <canvas id="canvas16" width="16" height="16"></canvas>
+    <br>
+    <button onclick="downloadIcon(16)">Download 16x16</button>
+  </div>
+  
+  <div class="info">
+    <p>🔒 Generated locally in your browser • No data uploaded</p>
+    <p>Right-click on any icon above to save, or use the download buttons</p>
+  </div>
+
+  <script>
+    function drawIcon(canvas, size) {
+      const ctx = canvas.getContext('2d');
+      const scale = size / 128;
+      
+      // Clear canvas
+      ctx.clearRect(0, 0, size, size);
+      
+      // Background
+      const bgGrad = ctx.createRadialGradient(size/2, size/2, 0, size/2, size/2, size/2);
+      bgGrad.addColorStop(0, '#1a1d3a');
+      bgGrad.addColorStop(1, '#0a0e27');
+      ctx.fillStyle = bgGrad;
+      ctx.fillRect(0, 0, size, size);
+      
+      // Main circle with gradient border
+      const grad = ctx.createLinearGradient(0, 0, size, size);
+      grad.addColorStop(0, '#00f5ff');
+      grad.addColorStop(0.5, '#6366f1');
+      grad.addColorStop(1, '#ff00ff');
+      
+      // Dark circle background
+      ctx.beginPath();
+      ctx.arc(size/2, size/2, size * 0.47, 0, Math.PI * 2);
+      ctx.fillStyle = '#0a0e27';
+      ctx.fill();
+      
+      // Glowing border
+      ctx.beginPath();
+      ctx.arc(size/2, size/2, size * 0.45, 0, Math.PI * 2);
+      ctx.strokeStyle = grad;
+      ctx.lineWidth = size * 0.023;
+      ctx.shadowColor = '#00f5ff';
+      ctx.shadowBlur = size * 0.04;
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+      
+      // AI Brain nodes
+      const glowGrad = ctx.createLinearGradient(0, 0, size, size);
+      glowGrad.addColorStop(0, '#00f5ff');
+      glowGrad.addColorStop(1, '#ff00ff');
+      
+      // Left node
+      ctx.beginPath();
+      ctx.arc(size * 0.33, size * 0.39, size * 0.023, 0, Math.PI * 2);
+      ctx.fillStyle = '#00f5ff';
+      ctx.shadowColor = '#00f5ff';
+      ctx.shadowBlur = size * 0.04;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+      
+      // Right node
+      ctx.beginPath();
+      ctx.arc(size * 0.67, size * 0.39, size * 0.023, 0, Math.PI * 2);
+      ctx.fillStyle = '#ff00ff';
+      ctx.shadowColor = '#ff00ff';
+      ctx.shadowBlur = size * 0.04;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+      
+      // Center neural network
+      ctx.beginPath();
+      ctx.arc(size/2, size * 0.39, size * 0.062, 0, Math.PI * 2);
+      ctx.strokeStyle = grad;
+      ctx.lineWidth = size * 0.016;
+      ctx.shadowColor = '#6366f1';
+      ctx.shadowBlur = size * 0.03;
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+      
+      ctx.beginPath();
+      ctx.arc(size/2, size * 0.39, size * 0.031, 0, Math.PI * 2);
+      ctx.fillStyle = glowGrad;
+      ctx.fill();
+      
+      // Connection lines
+      ctx.beginPath();
+      ctx.moveTo(size * 0.39, size * 0.39);
+      ctx.lineTo(size * 0.45, size * 0.39);
+      ctx.strokeStyle = '#00f5ff';
+      ctx.lineWidth = size * 0.016;
+      ctx.globalAlpha = 0.7;
+      ctx.stroke();
+      
+      ctx.beginPath();
+      ctx.moveTo(size * 0.55, size * 0.39);
+      ctx.lineTo(size * 0.61, size * 0.39);
+      ctx.strokeStyle = '#ff00ff';
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+      
+      // Document lines
+      const lineY = [0.53, 0.59, 0.66, 0.72];
+      const lineW = [0.45, 0.375, 0.406, 0.328];
+      
+      lineY.forEach((y, i) => {
+        ctx.beginPath();
+        ctx.roundRect(size * 0.27, size * y, size * lineW[i], size * 0.023, size * 0.012);
+        ctx.fillStyle = grad;
+        ctx.shadowColor = '#00f5ff';
+        ctx.shadowBlur = size * 0.02;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+      });
+      
+      // Lightning bolt (AI power)
+      ctx.beginPath();
+      ctx.moveTo(size * 0.531, size * 0.273);
+      ctx.lineTo(size * 0.484, size * 0.391);
+      ctx.lineTo(size * 0.531, size * 0.391);
+      ctx.lineTo(size * 0.5, size * 0.469);
+      ctx.lineTo(size * 0.547, size * 0.375);
+      ctx.lineTo(size * 0.5, size * 0.375);
+      ctx.closePath();
+      ctx.fillStyle = '#00f5ff';
+      ctx.shadowColor = '#00f5ff';
+      ctx.shadowBlur = size * 0.05;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+    }
+    
+    function downloadIcon(size) {
+      const canvas = document.getElementById(`canvas${size}`);
+      const link = document.createElement('a');
+      link.download = `logo-${size}.png`;
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    }
+    
+    // Draw all icons on load
+    window.onload = () => {
+      [128, 48, 32, 16].forEach(size => {
+        const canvas = document.getElementById(`canvas${size}`);
+        drawIcon(canvas, size);
+      });
+    };
+  </script>
+</body>
+</html>

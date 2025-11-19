@@ -1,0 +1,28 @@
+
+# Icon Generation Instructions for logo-32.png
+
+## Design Specifications:
+- Size: 32x32 pixels
+- Format: PNG with transparency
+- Style: Cyberpunk 2077 inspired glassmorphism
+
+## Color Palette:
+- Background: Dark navy gradient (#0a0e27 to #1a1d3a)
+- Primary: Cyan (#00f5ff)
+- Secondary: Magenta (#ff00ff)  
+- Accent: Indigo (#6366f1)
+
+## Design Elements:
+1. Dark circular background with gradient border
+2. AI brain circuit pattern with neural nodes
+3. Three connected circles (left cyan, center gradient, right magenta)
+4. Document summary lines below (4 lines with gradient)
+5. Lightning bolt accent (cyan, top center)
+6. Glowing effects on all elements
+
+## To Generate:
+1. Open icon-generator.html in a web browser
+2. Click "Download 32x32" button
+3. Save as logo-32.png in the extension root
+
+Alternatively, use any graphics tool (Figma, Photoshop, etc.) with these specs.

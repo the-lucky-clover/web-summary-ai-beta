@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Summary AI</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="app">
+    <header class="glass-panel">
+      <div class="cyber-glow"></div>
+      <h1 class="cyber-title">⚡ Web Summary AI</h1>
+      <p class="subtitle">Private AI Summarization</p>
+    </header>
+
+    <div id="main-content" class="bento-grid">
+      <div class="bento-box glass-panel" id="custom-prompt-section">
+        <div class="box-header">
+          <h2>✨ Custom Prompt</h2>
+        </div>
+        <div class="setting-group">
+          <label for="custom-prompt">Your Instructions:</label>
+          <textarea id="custom-prompt" rows="3" placeholder="Summarize the following text in a clear and concise way..."></textarea>
+          <small>Customize how you want summaries generated</small>
+        </div>
+      </div>
+
+      <div class="bento-box glass-panel" id="settings-section">
+        <div class="box-header">
+          <h2>⚙️ Settings</h2>
+        </div>
+        <div class="setting-group">
+          <label for="provider">AI Provider:</label>
+          <select id="provider" class="cyber-select">
+            <option value="huggingface">🤗 Hugging Face (Free)</option>
+            <option value="local">💻 Local (Free, Basic)</option>
+          </select>
+        </div>
+
+        <div class="setting-group" id="api-key-group" style="display: none;">
+          <label for="api-key">API Key:</label>
+          <input type="password" id="api-key" class="cyber-input" placeholder="Optional API key">
+          <small>Hugging Face is free and doesn't require an API key</small>
+        </div>
+
+        <button id="save-settings" class="cyber-button primary">💾 Save Settings</button>
+      </div>
+
+      <div class="bento-box glass-panel wide" id="summarize-section">
+        <div class="box-header">
+          <h2>🚀 Summarize</h2>
+        </div>
+        <button id="summarize-page" class="cyber-button action">⚡ Summarize Current Page</button>
+        <div id="summary-result" class="result-box" style="display: none;">
+          <h3 class="result-title">📄 Summary:</h3>
+          <div id="summary-text" class="result-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="glass-panel">
+      <p class="privacy-badge">🔒 100% Private • No Tracking • No Data Collection</p>
+    </footer>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+{
+  "appName": {
+    "message": "ChatGPT Summarize",
+    "description": "The name of the web-extension (45)"
+  },
+  "appDesc": {
+    "message": "خلاصه‌سازی یا گفتگو با وب‌سایت‌ها/یوتیوب با ChatGPT + DeepSeek. خلاصه * هوش مصنوعی * OpenAI * PDF * Claude",
+    "description": "The descirption of the web-extension (132)"
+  },
+  "defaultQuestion": {
+    "message": "خروجی شما باید از الگوی زیر استفاده کند:\n- نقطه‌ای با ایموجی\n\nمتنی که به شما می‌دهم را در مقدار مناسب نکات مختصر خلاصه کنید. برای هر نکته یک ایموجی مناسب انتخاب کنید. پاسخ شما باید به {{SELECTED_LANGUAGE}} باشد. از محتوای زیر استفاده کنید: {{CONTENT}}",
+    "description": "The default question used for ChatGPT"
+  },
+  "defaultQuestionGPT4": {
+    "message": "متن ارائه شده را به نکات مختصر فشرده کنید، برای هر کدام یک ایموجی مناسب انتخاب کنید، و به {{SELECTED_LANGUAGE}} با استفاده از محتوا پاسخ دهید: {{CONTENT}}",
+    "description": "The default question used for ChatGPT4"
+  },
+  "defaultSystemMessage": {
+    "message": "",
+    "description": "The default System Message used for ChatGPT"
+  },
+  "thankYouForInstalling": {
+    "message": "از نصب کردن متشکریم",
+    "description": "Thank you message after installing the extension"
+  },
+  "pinExtensionTutorial": {
+    "message": "این افزونه را به نوار ابزار خود پین کنید تا شروع کنید.",
+    "description": "Tutorial message for pinning the extension to the toolbar"
+  },
+  "selectProviderToSummarize": {
+    "message": "لطفاً ارائه‌دهنده خود را برای خلاصه‌سازی انتخاب کنید"
+  },
+  "installSuccess": {
+    "message": "آماده! هر وب‌سایت یا ویدیوی یوتیوب را با یک کلیک با استفاده از ChatGPT Suite خلاصه کنید! برای هرگونه <a>سوال یا بازخورد</a> با ما تماس بگیرید. خلاصه‌سازی خوشحال!",
+    "description": "Success message after installing the extension"
+  },
+  "happySumarize": {
+    "message": "خلاصه‌سازی خوشحال"
+  },
+  "options": {
+    "message": "گزینه‌ها",
+    "description": "Used for opening the extension options"
+  },
+  "prompt": {
+    "message": "پرامپت",
+    "description": "Used for describing the prompt settings section"
+  },
+  "misc": {
+    "message": "متفرقه",
+    "description": "Used for describing the misc settings section"
+  },
+  "memory": {
+    "message": "حافظه",
+    "description": "Used for describing the memory settings section"
+  },
+  "appearance": {
+    "message": "ظاهر",
+    "description": "Used for describing the appearance settings section"
+  },
+  "behaviour": {
+    "message": "رفتار",
+    "description": "Used for describing the behaviour settings section"
+  },
+  "chatGPTProviderDescription": {
+    "message": "API که ChatGPT webapp را قدرت می‌دهد، رایگان اما گاهی ناپایدار",
+    "description": "Description of the ChatGPT API Provider"
+  },
+  "openAIProviderDescription": {
+    "message": "API رسمی OpenAI، پایدارتر، بر اساس استفاده هزینه دارد",
+    "description": "Description of the OpenAI API Provider"
+  },
+  "apiKey": {
+    "message": "کلید API",
+    "description": "Used for selecting the API Key"
+  },
+  "question": {
+    "message": "سوال",
+    "description": "Used for selecting the question"
+  },
+  "systemMessage": {
+    "message": "پیام سیستم",
+    "description": "Used for selecting the System Message"
+  },
+  "model": {
+    "message": "مدل",
+    "description": "Used for selecting the model"
+  },
+  "save": {
+    "message": "ذخیره",
+    "description": "Used for saving the extension options"
+  },
+  "reset": {
+    "message": "بازنشانی",
+    "description": "Used for resetting the extension options"
+  },
+  "aiProvider": {
+    "message": "ارائه‌دهنده هوش مصنوعی",
+    "description": "Used for selecting the AI provider"
+  },
+  "loading": {
+    "message": "در حال بارگذاری...",
+    "description": "Status message used when loading"
+  },
+  "moreInfo": {
+    "message": "اطلاعات بیشتر",
+    "description": "Used for opening a new modal with more info"
+  },
+  "requestOpenAIProvider": {
+    "message": "OpenAI گهگاه نیاز به گذراندن بررسی امنیتی دارد. اگر این اتفاق ادامه داد، ارائه‌دهنده هوش مصنوعی را به OpenAI API در گزینه‌های افزونه تغییر دهید.",
+    "description": "Status message when failed to load response from OpenAI second time in a row"
+  },
+  "waitingForChatGPTResponse": {
+    "message": "در انتظار پاسخ ChatGPT...",
+    "description": "Status message used when waiting for ChatGPT response"
+  },
+  "failedToLoadResponseFromChatGPT": {
+    "message": "بارگذاری پاسخ از ChatGPT ناموفق بود",
+    "description": "Status message used when failed to load response from ChatGPT"
+  },
+  "extractingPageContent": {
+    "message": "استخراج محتوای صفحه...",
+    "description": "Status message used when extracting page content"
+  },
+  "info": {
+    "message": "اطلاعات"
+  },
+  "tryItNow": {
+    "message": "همین حالا امتحان کنید",
+    "description": "Action button used after successful installation"
+  },
+  "rateExtensionInWebstore": {
+    "message": "این افزونه را دوست داشتید؟ ۵ ستاره به ما بدهید"
+  },
+  "recommendExtension": {
+    "message": "با خلاصه؟ لطفاً <a>افزونه</a> را به اشتراک بگذارید"
+  },
+  "refreshOpenAILogin": {
+    "message": "لطفاً وارد شوید و بررسی Cloudflare را در <a>chatgpt.com</a> بگذرانید"
+  },
+  "refreshDeepSeekChatLogin": {
+    "message": "لطفاً وارد شوید و بررسی Cloudflare را در <a>chat.deepseek.com</a> بگذرانید"
+  },
+  "copy": {
+    "message": "کپی",
+    "description": "Used for copying text to clipboard"
+  },
+  "retry": {
+    "message": "مجدداً امتحان کنید",
+    "description": "Used invalidating a ChatGPT answer"
+  },
+  "summarize": {
+    "message": "خلاصه‌سازی",
+    "description": "Tab label"
+  },
+  "chat": {
+    "message": "گفتگو",
+    "description": "Tab label"
+  },
+  "close": {
+    "message": "بستن",
+    "description": "Used for closing the extension popup"
+  },
+  "chatgptLoggedIn": {
+    "message": "ChatGPT وارد شده"
+  },
+  "chatgptNotLoggedIn": {
+    "message": "ChatGPT وارد نشده"
+  },
+  "login": {
+    "message": "ورود"
+  },
+  "useOpenAiApi": {
+    "message": "از کلید API OpenAI خود استفاده کنید"
+  },
+  "originalTranscript": {
+    "message": "متن",
+    "description": "Tab label"
+  },
+  "summarizeText": {
+    "message": "متن انتخاب شده را خلاصه کنید"
+  },
+  "summarizeAll": {
+    "message": "همه را خلاصه کنید"
+  },
+  "summarizeNextBatch": {
+    "message": "دسته بعدی را خلاصه کنید"
+  },
+  "summarized": {
+    "message": "خلاصه شده"
+  },
+  "authenticateChatGPT": {
+    "message": "لطفاً با استفاده از ChatGPT احراز هویت کنید"
+  },
+  "addOpenAIKey": {
+    "message": "لطفاً کلید API OpenAI خود را اضافه کنید"
+  },
+  "addDeepSeekAPIKey": {
+    "message": "لطفاً کلید API DeepSeek خود را اضافه کنید"
+  },
+  "ready": {
+    "message": "آماده"
+  },
+  "howToObtainKey": {
+    "message": "چگونه کلید API خود را بدست آورید"
+  },
+  "wrongApiKey": {
+    "message": "واکشی مدل‌ها ناموفق بود. لطفاً کلید API خود را بررسی کنید."
+  },
+  "showYoutubeButton": {
+    "message": "نمایش دکمه خلاصه‌سازی یوتیوب"
+  },
+  "showSummarizeButton": {
+    "message": "نمایش دکمه خلاصه‌سازی شناور"
+  },
+  "summarizeFullText": {
+    "message": "همیشه کل متن را خلاصه کنید"
+  },
+  "availableAskQuestion": {
+    "message": "فقط با ارائه‌دهنده OpenAI API در دسترس است"
+  },
+  "askQuestion": {
+    "message": "سوال بپرسید (بتا)"
+  },
+  "askQuestionIntro": {
+    "message": "سلام! 🤖 من اینجا هستم تا به پاسخ دادن به هر سوالی که درباره محتوای این صفحه دارید کمک کنم. امروز چطور می‌تونم کمکتان کنم؟"
+  },
+  "summary": {
+    "message": "خلاصه"
+  },
+  "alertAskQuestion": {
+    "message": "برای دسترسی به این ویژگی، لطفاً OpenAI API را به عنوان ارائه‌دهنده خود در صفحه گزینه‌ها انتخاب کنید."
+  },
+  "suggestionOpenAI": {
+    "message": "از OpenAI API برای نتایج قابل اعتمادتر استفاده کنید!"
+  },
+  "timeoutError": {
+    "message": "متأسفانه، درخواست خلاصه‌سازی شما زمان‌آوت شد. این ممکن است به دلیل تاخیر شبکه یا تقاضای بالای سرویس رخ دهد. لطفاً بعداً دوباره درخواست خود را ارسال کنید."
+  },
+  "chatGPTwelcome": {
+    "message": "رابط ChatGPT (پیش‌فرض)"
+  },
+  "chatGPTperks": {
+    "message": "رایگان و کند"
+  },
+  "OpenAIwelcome": {
+    "message": "کلید API OpenAI"
+  },
+  "OpenAIperks": {
+    "message": "توصیه شده، سریع (کلید API خود را اینجا بگیرید"
+  },
+  "DeepSeekAPIwelcome": {
+    "message": "کلید API DeepSeek"
+  },
+  "DeepSeekAPIperks": {
+    "message": "کلید API خود را اینجا بگیرید"
+  },
+  "DeepSeekChatWelcome": {
+    "message": "رابط گفتگوی DeepSeek"
+  },
+  "DeepSeekChatPerks": {
+    "message": "رایگان و کند"
+  },
+  "here": {
+    "message": "اینجا"
+  },
+  "missingYoutubeTranscription": {
+    "message": "به دلیل نبود نسخه متنی در ویدیوی یوتیوب، برای ارائه این خلاصه از محتوای صفحه استفاده شده است"
+  }
+}

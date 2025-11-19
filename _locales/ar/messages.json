@@ -1,0 +1,269 @@
+{
+  "appName": {
+    "message": "ChatGPT Summarize",
+    "description": "The name of the web-extension (45)"
+  },
+  "appDesc": {
+    "message": "تلخيص المواقع أو الدردشة معها باستخدام ChatGPT + DeepSeek. ملخص * تلخيص بالذكاء الاصطناعي * OpenAI * ملخص PDF * Claude",
+    "description": "The descirption of the web-extension (132)"
+  },
+  "defaultQuestion": {
+    "message": "يجب أن يستخدم ردك القالب التالي:\n- نقطة تعداد برمز تعبيري\n\nلخص النص الذي أعطيك إياه في مجموعة مناسبة من النقاط المقتضبة. اختر رمزاً تعبيرياً مناسباً لكل نقطة. يجب أن يكون ردك بـ {{SELECTED_LANGUAGE}}. استخدم المحتوى التالي: {{CONTENT}}",
+    "description": "The default question used for ChatGPT"
+  },
+  "defaultQuestionGPT4": {
+    "message": "كثف النص المقدم إلى نقاط مقتضبة، واختر رمزاً تعبيرياً مناسباً لكل نقطة، وأجب بـ {{SELECTED_LANGUAGE}} مستخدماً المحتوى: {{CONTENT}}",
+    "description": "The default question used for ChatGPT4"
+  },
+  "defaultSystemMessage": {
+    "message": "",
+    "description": "The default System Message used for ChatGPT"
+  },
+  "thankYouForInstalling": {
+    "message": "شكراً لتثبيت الإضافة",
+    "description": "Thank you message after installing the extension"
+  },
+  "pinExtensionTutorial": {
+    "message": "قم بتثبيت هذه الإضافة في شريط الأدوات للبدء.",
+    "description": "Tutorial message for pinning the extension to the toolbar"
+  },
+  "selectProviderToSummarize": {
+    "message": "يرجى اختيار مقدم الخدمة للتلخيص"
+  },
+  "installSuccess": {
+    "message": "جاهز! لخص أي صفحة ويب أو فيديو يوتيوب بنقرة واحدة باستخدام مجموعة ChatGPT! تواصل معنا لأي <a>أسئلة أو ملاحظات</a>. استمتع بالتلخيص!",
+    "description": "Success message after installing the extension"
+  },
+  "happySumarize": {
+    "message": "استمتع بالتلخيص"
+  },
+  "options": {
+    "message": "الخيارات",
+    "description": "Used for opening the extension options"
+  },
+  "prompt": {
+    "message": "الطلب",
+    "description": "Used for describing the prompt settings section"
+  },
+  "misc": {
+    "message": "متنوع",
+    "description": "Used for describing the misc settings section"
+  },
+  "memory": {
+    "message": "الذاكرة",
+    "description": "Used for describing the memory settings section"
+  },
+  "appearance": {
+    "message": "المظهر",
+    "description": "Used for describing the appearance settings section"
+  },
+  "behaviour": {
+    "message": "السلوك",
+    "description": "Used for describing the behaviour settings section"
+  },
+  "chatGPTProviderDescription": {
+    "message": "الواجهة البرمجية التي تدعم تطبيق ChatGPT الويب، مجاني، لكن أحياناً غير مستقر",
+    "description": "Description of the ChatGPT API Provider"
+  },
+  "openAIProviderDescription": {
+    "message": "الواجهة البرمجية الرسمية لـ OpenAI، أكثر استقراراً، تُحاسب بالاستخدام",
+    "description": "Description of the OpenAI API Provider"
+  },
+  "apiKey": {
+    "message": "مفتاح API",
+    "description": "Used for selecting the API Key"
+  },
+  "question": {
+    "message": "سؤال",
+    "description": "Used for selecting the question"
+  },
+  "systemMessage": {
+    "message": "رسالة النظام",
+    "description": "Used for selecting the System Message"
+  },
+  "model": {
+    "message": "النموذج",
+    "description": "Used for selecting the model"
+  },
+  "save": {
+    "message": "حفظ",
+    "description": "Used for saving the extension options"
+  },
+  "reset": {
+    "message": "إعادة تعيين",
+    "description": "Used for resetting the extension options"
+  },
+  "aiProvider": {
+    "message": "مقدم خدمة الذكاء الاصطناعي",
+    "description": "Used for selecting the AI provider"
+  },
+  "loading": {
+    "message": "جارٍ التحميل...",
+    "description": "Status message used when loading"
+  },
+  "moreInfo": {
+    "message": "معلومات أكثر",
+    "description": "Used for opening a new modal with more info"
+  },
+  "requestOpenAIProvider": {
+    "message": "يتطلب OpenAI اجتياز فحص أمني من حين لآخر. إذا استمر هذا، غيّر مقدم الذكاء الاصطناعي إلى OpenAI API في خيارات الإضافة.",
+    "description": "Status message when failed to load response from OpenAI second time in a row"
+  },
+  "waitingForChatGPTResponse": {
+    "message": "في انتظار رد ChatGPT...",
+    "description": "Status message used when waiting for ChatGPT response"
+  },
+  "failedToLoadResponseFromChatGPT": {
+    "message": "فشل في تحميل الرد من ChatGPT",
+    "description": "Status message used when failed to load response from ChatGPT"
+  },
+  "extractingPageContent": {
+    "message": "جارٍ استخراج محتوى الصفحة...",
+    "description": "Status message used when extracting page content"
+  },
+  "info": {
+    "message": "معلومات"
+  },
+  "tryItNow": {
+    "message": "جرّبها الآن",
+    "description": "Action button used after successful installation"
+  },
+  "rateExtensionInWebstore": {
+    "message": "أعجبتك هذه الإضافة؟ امنحنا تقييم 5 نجوم"
+  },
+  "recommendExtension": {
+    "message": "مع الملخص؟ يرجى مشاركة <a>الإضافة</a>"
+  },
+  "refreshOpenAILogin": {
+    "message": "يرجى تسجيل الدخول واجتياز فحص Cloudflare في <a>chatgpt.com</a>"
+  },
+  "refreshDeepSeekChatLogin": {
+    "message": "يرجى تسجيل الدخول واجتياز فحص Cloudflare في <a>chat.deepseek.com</a>"
+  },
+  "copy": {
+    "message": "نسخ",
+    "description": "Used for copying text to clipboard"
+  },
+  "retry": {
+    "message": "إعادة المحاولة",
+    "description": "Used invalidating a ChatGPT answer"
+  },
+  "summarize": {
+    "message": "تلخيص",
+    "description": "Tab label"
+  },
+  "chat": {
+    "message": "محادثة",
+    "description": "Tab label"
+  },
+  "close": {
+    "message": "إغلاق",
+    "description": "Used for closing the extension popup"
+  },
+  "chatgptLoggedIn": {
+    "message": "تم تسجيل الدخول في ChatGPT"
+  },
+  "chatgptNotLoggedIn": {
+    "message": "لم يتم تسجيل الدخول في ChatGPT"
+  },
+  "login": {
+    "message": "تسجيل الدخول"
+  },
+  "useOpenAiApi": {
+    "message": "استخدم مفتاح OpenAI API الخاص بك"
+  },
+  "originalTranscript": {
+    "message": "النسخة النصية",
+    "description": "Tab label"
+  },
+  "summarizeText": {
+    "message": "تلخيص النص المحدد"
+  },
+  "summarizeAll": {
+    "message": "تلخيص الكل"
+  },
+  "summarizeNextBatch": {
+    "message": "تلخيص الدفعة التالية"
+  },
+  "summarized": {
+    "message": "تم التلخيص"
+  },
+  "authenticateChatGPT": {
+    "message": "يرجى المصادقة باستخدام ChatGPT"
+  },
+  "addOpenAIKey": {
+    "message": "يرجى إضافة مفتاح OpenAI API الخاص بك"
+  },
+  "addDeepSeekAPIKey": {
+    "message": "يرجى إضافة مفتاح DeepSeek API الخاص بك"
+  },
+  "ready": {
+    "message": "جاهز"
+  },
+  "howToObtainKey": {
+    "message": "كيفية الحصول على مفتاح API الخاص بك"
+  },
+  "wrongApiKey": {
+    "message": "تعذر جلب النماذج. يرجى التحقق من مفتاح API الخاص بك."
+  },
+  "showYoutubeButton": {
+    "message": "إظهار زر تلخيص YouTube"
+  },
+  "showSummarizeButton": {
+    "message": "إظهار زر التلخيص العائم"
+  },
+  "summarizeFullText": {
+    "message": "تلخيص النص الكامل دائماً"
+  },
+  "availableAskQuestion": {
+    "message": "متاح فقط مع مقدم خدمة OpenAI API"
+  },
+  "askQuestion": {
+    "message": "اسأل سؤال (تجريبي)"
+  },
+  "askQuestionIntro": {
+    "message": "مرحباً! 🤖 أنا هنا لمساعدتك في الإجابة على أي أسئلة لديك حول محتوى هذه الصفحة. كيف يمكنني مساعدتك اليوم؟"
+  },
+  "summary": {
+    "message": "الملخص"
+  },
+  "alertAskQuestion": {
+    "message": "للوصول إلى هذه الميزة، يرجى اختيار OpenAI API كمقدم خدمة في صفحة الخيارات."
+  },
+  "suggestionOpenAI": {
+    "message": "استخدم OpenAI API للحصول على نتائج أكثر موثوقية!"
+  },
+  "timeoutError": {
+    "message": "عذراً، انتهت مهلة طلب التلخيص الخاص بك. قد يحدث هذا بسبب تأخيرات الشبكة أو الطلب المرتفع على الخدمة. يرجى إعادة تقديم طلبك لاحقاً."
+  },
+  "chatGPTwelcome": {
+    "message": "واجهة ChatGPT (افتراضي)"
+  },
+  "chatGPTperks": {
+    "message": "مجاني وبطيء"
+  },
+  "OpenAIwelcome": {
+    "message": "مفتاح OpenAI API"
+  },
+  "OpenAIperks": {
+    "message": "موصى به، سريع (احصل على مفتاح API الخاص بك من هنا"
+  },
+  "DeepSeekAPIwelcome": {
+    "message": "مفتاح DeepSeek API"
+  },
+  "DeepSeekAPIperks": {
+    "message": "احصل على مفتاح API الخاص بك من هنا"
+  },
+  "DeepSeekChatWelcome": {
+    "message": "واجهة DeepSeek للمحادثة"
+  },
+  "DeepSeekChatPerks": {
+    "message": "مجاني وبطيء"
+  },
+  "here": {
+    "message": "هنا"
+  },
+  "missingYoutubeTranscription": {
+    "message": "بسبب عدم توفر النسخة النصية في فيديو YouTube، تم استخدام محتوى الصفحة لتقديم هذا الملخص"
+  }
+}

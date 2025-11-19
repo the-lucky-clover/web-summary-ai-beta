@@ -1,0 +1,269 @@
+{
+  "appName": {
+    "message": "ChatGPT Summarize",
+    "description": "The name of the web-extension (45)"
+  },
+  "appDesc": {
+    "message": "ChatGPT összegzés vagy beszélgetés weboldalakkal / YouTube-dal ChatGPT + DeepSeek használatával. Összefoglaló * AI Összefoglaló * OpenAI * PDF Összefoglaló * Claude",
+    "description": "The descirption of the web-extension (132)"
+  },
+  "defaultQuestion": {
+    "message": "A kimenetednek a következő sablont kell használnia:\\n- Emoji Felsoroláspont\\n\\nFoglalja össze a szöveget, amit adok, megfelelő mennyiségű tömör felsoroláspontban. Válasszon megfelelő emojit minden felsorolásponthoz. A válaszának {{SELECTED_LANGUAGE}} nyelven kell lennie. Használja a következő tartalmat: {{CONTENT}}",
+    "description": "The default question used for ChatGPT"
+  },
+  "defaultQuestionGPT4": {
+    "message": "Sűrítse a megadott szöveget tömör felsoroláspontokba, válasszon megfelelő emojit mindegyikhez, és válaszoljon {{SELECTED_LANGUAGE}} nyelven a következő tartalom használatával: {{CONTENT}}",
+    "description": "The default question used for ChatGPT4"
+  },
+  "defaultSystemMessage": {
+    "message": "",
+    "description": "The default System Message used for ChatGPT"
+  },
+  "thankYouForInstalling": {
+    "message": "Köszönjük a telepítést",
+    "description": "Thank you message after installing the extension"
+  },
+  "pinExtensionTutorial": {
+    "message": "Rögzítse ezt a kiegészítőt az eszköztárához a kezdéshez.",
+    "description": "Tutorial message for pinning the extension to the toolbar"
+  },
+  "selectProviderToSummarize": {
+    "message": "Kérjük, válassza ki a szolgáltatót az összefoglaláshoz"
+  },
+  "installSuccess": {
+    "message": "Kész! Összegezzen bármilyen weboldalt vagy YouTube videót egy kattintással a ChatGPT Suite segítségével! Lépjen kapcsolatba velünk bármilyen <a>kérdéssel vagy visszajelzéssel</a>. Boldog összegzést!",
+    "description": "Success message after installing the extension"
+  },
+  "happySumarize": {
+    "message": "Boldog összegzést"
+  },
+  "options": {
+    "message": "Beállítások",
+    "description": "Used for opening the extension options"
+  },
+  "prompt": {
+    "message": "Prompt",
+    "description": "Used for describing the prompt settings section"
+  },
+  "misc": {
+    "message": "Egyéb",
+    "description": "Used for describing the misc settings section"
+  },
+  "memory": {
+    "message": "Memória",
+    "description": "Used for describing the memory settings section"
+  },
+  "appearance": {
+    "message": "Megjelenés",
+    "description": "Used for describing the appearance settings section"
+  },
+  "behaviour": {
+    "message": "Viselkedés",
+    "description": "Used for describing the behaviour settings section"
+  },
+  "chatGPTProviderDescription": {
+    "message": "A ChatGPT webalkalmazást működtető API, ingyenes, de néha instabil",
+    "description": "Description of the ChatGPT API Provider"
+  },
+  "openAIProviderDescription": {
+    "message": "OpenAI hivatalos API, stabilabb, használat alapján számláz",
+    "description": "Description of the OpenAI API Provider"
+  },
+  "apiKey": {
+    "message": "API kulcs",
+    "description": "Used for selecting the API Key"
+  },
+  "question": {
+    "message": "Kérdés",
+    "description": "Used for selecting the question"
+  },
+  "systemMessage": {
+    "message": "Rendszerüzenet",
+    "description": "Used for selecting the System Message"
+  },
+  "model": {
+    "message": "Modell",
+    "description": "Used for selecting the model"
+  },
+  "save": {
+    "message": "Mentés",
+    "description": "Used for saving the extension options"
+  },
+  "reset": {
+    "message": "Visszaállítás",
+    "description": "Used for resetting the extension options"
+  },
+  "aiProvider": {
+    "message": "AI szolgáltató",
+    "description": "Used for selecting the AI provider"
+  },
+  "loading": {
+    "message": "Betöltés...",
+    "description": "Status message used when loading"
+  },
+  "moreInfo": {
+    "message": "Több információ",
+    "description": "Used for opening a new modal with more info"
+  },
+  "requestOpenAIProvider": {
+    "message": "Az OpenAI időnként biztonsági ellenőrzés elvégzését igényli. Ha ez folyamatosan történik, változtassa meg az AI szolgáltatót OpenAI API-ra a kiegészítő beállításaiban.",
+    "description": "Status message when failed to load response from OpenAI second time in a row"
+  },
+  "waitingForChatGPTResponse": {
+    "message": "ChatGPT válaszára várva...",
+    "description": "Status message used when waiting for ChatGPT response"
+  },
+  "failedToLoadResponseFromChatGPT": {
+    "message": "Nem sikerült betölteni a választ a ChatGPT-től",
+    "description": "Status message used when failed to load response from ChatGPT"
+  },
+  "extractingPageContent": {
+    "message": "Oldaltartalom kivonása...",
+    "description": "Status message used when extracting page content"
+  },
+  "info": {
+    "message": "Információ"
+  },
+  "tryItNow": {
+    "message": "Próbálja ki most",
+    "description": "Action button used after successful installation"
+  },
+  "rateExtensionInWebstore": {
+    "message": "Tetszik ez a kiegészítő? Adjon nekünk 5 csillagos értékelést"
+  },
+  "recommendExtension": {
+    "message": "az összefoglalóval? Kérjük, ossza meg <a>a kiegészítőt</a>"
+  },
+  "refreshOpenAILogin": {
+    "message": "Kérjük, jelentkezzen be és teljesítse a Cloudflare ellenőrzést a <a>chatgpt.com</a> oldalon"
+  },
+  "refreshDeepSeekChatLogin": {
+    "message": "Kérjük, jelentkezzen be és teljesítse a Cloudflare ellenőrzést a <a>chat.deepseek.com</a> oldalon"
+  },
+  "copy": {
+    "message": "Másolás",
+    "description": "Used for copying text to clipboard"
+  },
+  "retry": {
+    "message": "Újra",
+    "description": "Used invalidating a ChatGPT answer"
+  },
+  "summarize": {
+    "message": "Összefoglaló",
+    "description": "Tab label"
+  },
+  "chat": {
+    "message": "Beszélgetés",
+    "description": "Tab label"
+  },
+  "close": {
+    "message": "Bezárás",
+    "description": "Used for closing the extension popup"
+  },
+  "chatgptLoggedIn": {
+    "message": "ChatGPT bejelentkezve"
+  },
+  "chatgptNotLoggedIn": {
+    "message": "ChatGPT nincs bejelentkezve"
+  },
+  "login": {
+    "message": "Bejelentkezés"
+  },
+  "useOpenAiApi": {
+    "message": "Használja az OpenAI API kulcsát"
+  },
+  "originalTranscript": {
+    "message": "Átirat",
+    "description": "Tab label"
+  },
+  "summarizeText": {
+    "message": "Kijelölt szöveg összefoglalása"
+  },
+  "summarizeAll": {
+    "message": "Összes összefoglalása"
+  },
+  "summarizeNextBatch": {
+    "message": "Következő köteg összefoglalása"
+  },
+  "summarized": {
+    "message": "Összefoglalva"
+  },
+  "authenticateChatGPT": {
+    "message": "Kérjük, hitelesítse magát a ChatGPT használatával"
+  },
+  "addOpenAIKey": {
+    "message": "Kérjük, adja hozzá OpenAI API kulcsát"
+  },
+  "addDeepSeekAPIKey": {
+    "message": "Kérjük, adja hozzá DeepSeek API kulcsát"
+  },
+  "ready": {
+    "message": "Kész"
+  },
+  "howToObtainKey": {
+    "message": "Hogyan szerezze be az API kulcsát"
+  },
+  "wrongApiKey": {
+    "message": "Nem sikerült lekérni a modelleket. Kérjük, ellenőrizze az API kulcsát."
+  },
+  "showYoutubeButton": {
+    "message": "YouTube összefoglaló gomb megjelenítése"
+  },
+  "showSummarizeButton": {
+    "message": "Lebegő összefoglaló gomb megjelenítése"
+  },
+  "summarizeFullText": {
+    "message": "Mindig a teljes szöveget foglalja össze"
+  },
+  "availableAskQuestion": {
+    "message": "Csak az OpenAI API szolgáltatóval érhető el"
+  },
+  "askQuestion": {
+    "message": "Kérdés feltevése (Béta)"
+  },
+  "askQuestionIntro": {
+    "message": "Üdv! 🤖 Itt vagyok, hogy segítsek válaszolni az oldal tartalmával kapcsolatos kérdéseire. Hogyan segíthetek ma?"
+  },
+  "summary": {
+    "message": "Összefoglaló"
+  },
+  "alertAskQuestion": {
+    "message": "A funkció eléréséhez kérjük, válassza ki az OpenAI API-t szolgáltatóként a beállítások oldalon."
+  },
+  "suggestionOpenAI": {
+    "message": "Használja az OpenAI API-t megbízhatóbb eredményekért!"
+  },
+  "timeoutError": {
+    "message": "Sajnos az összefoglaló kérése lejárt. Ez hálózati késések vagy magas szolgáltatási igény miatt történhet. Kérjük, próbálja meg később újra elküldeni a kérését."
+  },
+  "chatGPTwelcome": {
+    "message": "ChatGPT felület (alapértelmezett)"
+  },
+  "chatGPTperks": {
+    "message": "ingyenes és lassú"
+  },
+  "OpenAIwelcome": {
+    "message": "OpenAI API kulcs"
+  },
+  "OpenAIperks": {
+    "message": "ajánlott, gyors (szerezze be API kulcsát itt"
+  },
+  "DeepSeekAPIwelcome": {
+    "message": "DeepSeek API kulcs"
+  },
+  "DeepSeekAPIperks": {
+    "message": "szerezze be API kulcsát itt"
+  },
+  "DeepSeekChatWelcome": {
+    "message": "DeepSeek Chat felület"
+  },
+  "DeepSeekChatPerks": {
+    "message": "ingyenes és lassú"
+  },
+  "here": {
+    "message": "itt"
+  },
+  "missingYoutubeTranscription": {
+    "message": "A YouTube videóban hiányzó átirat miatt az oldal tartalma lett felhasználva az összefoglaló biztosításához"
+  }
+}

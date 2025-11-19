@@ -1,0 +1,113 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "⚡ Web Summary AI"
+    }
+  ],
+  "settings": {
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorCustomizations": {
+      "titleBar.activeBackground": "#0a0e27",
+      "titleBar.activeForeground": "#00f5ff",
+      "titleBar.inactiveBackground": "#0d1b2a",
+      "titleBar.inactiveForeground": "#64748b",
+      "activityBar.background": "#0a0e27",
+      "activityBar.foreground": "#00f5ff",
+      "statusBar.background": "#6366f1",
+      "statusBar.foreground": "#ffffff",
+      "statusBar.noFolderBackground": "#0a0e27",
+      "editor.background": "#0f172a"
+    },
+    "files.associations": {
+      "*.json": "jsonc"
+    },
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/node_modules": true,
+      "**/*.instructions.txt": false
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/*.min.js": true
+    },
+    "editor.rulers": [80, 120],
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": true,
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontSize": 13,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false
+  },
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "ms-vscode.vscode-typescript-next",
+      "formulahendry.auto-rename-tag",
+      "bradlc.vscode-tailwindcss"
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "🚀 Launch Web Summary AI",
+        "url": "chrome://extensions/",
+        "webRoot": "${workspaceFolder}",
+        "runtimeArgs": [
+          "--load-extension=${workspaceFolder}"
+        ]
+      }
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "📦 Package Extension",
+        "type": "shell",
+        "command": "zip",
+        "args": [
+          "-r",
+          "web-summary-ai.zip",
+          ".",
+          "-x",
+          "*.git*",
+          "*node_modules*",
+          "*.DS_Store",
+          "*internal*",
+          "*.instructions.txt",
+          "icon-generator.html",
+          "generate-icons.js"
+        ],
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "🎨 Open Icon Generator",
+        "type": "shell",
+        "command": "open",
+        "args": ["icon-generator.html"],
+        "problemMatcher": []
+      },
+      {
+        "label": "🧹 Clean Build Artifacts",
+        "type": "shell",
+        "command": "rm",
+        "args": ["-rf", "*.zip", "*.instructions.txt"],
+        "problemMatcher": []
+      }
+    ]
+  }
+}

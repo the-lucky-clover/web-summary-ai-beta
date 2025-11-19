@@ -1,0 +1,269 @@
+{
+  "appName": {
+    "message": "ChatGPT Summarize",
+    "description": "The name of the web-extension (45)"
+  },
+  "appDesc": {
+    "message": "ChatGPT svetainių ir YouTube apžvalgos su ChatGPT + DeepSeek. Santrauka * AI santrauka * OpenAI * PDF santrauka * Claude",
+    "description": "The descirption of the web-extension (132)"
+  },
+  "defaultQuestion": {
+    "message": "Jūsų išvestis turėtų naudoti šį šabloną:\n- Emoji punktas\n\nApibendrinkite man pateiktą tekstą tinkamu kiekiu glaustų punktų. Pasirinkite tinkamą emoji kiekvienam punktui. Jūsų atsakymas turėtų būti {{SELECTED_LANGUAGE}} kalba. Naudokite šį turinį: {{CONTENT}}",
+    "description": "The default question used for ChatGPT"
+  },
+  "defaultQuestionGPT4": {
+    "message": "Sutrumpinkite pateiktą tekstą į glaustus punktus, pasirinkdami tinkamą emoji kiekvienam, ir atsakykite {{SELECTED_LANGUAGE}} kalba naudodami turinį: {{CONTENT}}",
+    "description": "The default question used for ChatGPT4"
+  },
+  "defaultSystemMessage": {
+    "message": "",
+    "description": "The default System Message used for ChatGPT"
+  },
+  "thankYouForInstalling": {
+    "message": "Ačiū už įdiegimą",
+    "description": "Thank you message after installing the extension"
+  },
+  "pinExtensionTutorial": {
+    "message": "Prisekite šį plėtinį prie įrankių juostos, kad pradėtumėte.",
+    "description": "Tutorial message for pinning the extension to the toolbar"
+  },
+  "selectProviderToSummarize": {
+    "message": "Pasirinkite savo tiekėją, kad apibendrinti"
+  },
+  "installSuccess": {
+    "message": "Paruošta! Apibendrinkit bet kurį tinklalapį ar YouTube vaizdo įrašą vienu paspaudimu naudodami ChatGPT paketo! Susisiekite su mumis dėl bet kokių <a>klausimų ar atsiliepimų</a>. Sėkmingo apibendrinimo!",
+    "description": "Success message after installing the extension"
+  },
+  "happySumarize": {
+    "message": "Sėkmingo apibendrinimo"
+  },
+  "options": {
+    "message": "Parinktys",
+    "description": "Used for opening the extension options"
+  },
+  "prompt": {
+    "message": "Raginimas",
+    "description": "Used for describing the prompt settings section"
+  },
+  "misc": {
+    "message": "Įvairūs",
+    "description": "Used for describing the misc settings section"
+  },
+  "memory": {
+    "message": "Atmintis",
+    "description": "Used for describing the memory settings section"
+  },
+  "appearance": {
+    "message": "Išvaizda",
+    "description": "Used for describing the appearance settings section"
+  },
+  "behaviour": {
+    "message": "Elgesys",
+    "description": "Used for describing the behaviour settings section"
+  },
+  "chatGPTProviderDescription": {
+    "message": "API, kuri valdo ChatGPT internetinę programą, nemokama, bet kartais nestabili",
+    "description": "Description of the ChatGPT API Provider"
+  },
+  "openAIProviderDescription": {
+    "message": "OpenAI oficialūs API, stabilesni, mokėjimas už naudojimą",
+    "description": "Description of the OpenAI API Provider"
+  },
+  "apiKey": {
+    "message": "API raktas",
+    "description": "Used for selecting the API Key"
+  },
+  "question": {
+    "message": "Klausimas",
+    "description": "Used for selecting the question"
+  },
+  "systemMessage": {
+    "message": "Sistemos pranešimas",
+    "description": "Used for selecting the System Message"
+  },
+  "model": {
+    "message": "Modelis",
+    "description": "Used for selecting the model"
+  },
+  "save": {
+    "message": "Išsaugoti",
+    "description": "Used for saving the extension options"
+  },
+  "reset": {
+    "message": "Atstatyti",
+    "description": "Used for resetting the extension options"
+  },
+  "aiProvider": {
+    "message": "AI tiekėjas",
+    "description": "Used for selecting the AI provider"
+  },
+  "loading": {
+    "message": "Kraunama...",
+    "description": "Status message used when loading"
+  },
+  "moreInfo": {
+    "message": "Daugiau informacijos",
+    "description": "Used for opening a new modal with more info"
+  },
+  "requestOpenAIProvider": {
+    "message": "OpenAI reikalauja praeiti saugumo tikrinimą kas kiek laiko. Jei tai vyksta toliau, pakeiskite AI tiekėją į OpenAI API plėtinio parinktyse.",
+    "description": "Status message when failed to load response from OpenAI second time in a row"
+  },
+  "waitingForChatGPTResponse": {
+    "message": "Laukiama ChatGPT atsakymo...",
+    "description": "Status message used when waiting for ChatGPT response"
+  },
+  "failedToLoadResponseFromChatGPT": {
+    "message": "Nepavyko įkelti atsakymo iš ChatGPT",
+    "description": "Status message used when failed to load response from ChatGPT"
+  },
+  "extractingPageContent": {
+    "message": "Išgaunamas puslapio turinys...",
+    "description": "Status message used when extracting page content"
+  },
+  "info": {
+    "message": "Informacija"
+  },
+  "tryItNow": {
+    "message": "Išbandykite dabar",
+    "description": "Action button used after successful installation"
+  },
+  "rateExtensionInWebstore": {
+    "message": "Patinka šis plėtinys? Įvertinkite mus 5 žvaigždutėmis"
+  },
+  "recommendExtension": {
+    "message": "su santrauka? Prašome pasidalinti <a>plėtiniu</a>"
+  },
+  "refreshOpenAILogin": {
+    "message": "Prašome prisijunkite ir praeikite Cloudflare tikrinimą <a>chatgpt.com</a>"
+  },
+  "refreshDeepSeekChatLogin": {
+    "message": "Prašome prisijunkite ir praeikite Cloudflare tikrinimą <a>chat.deepseek.com</a>"
+  },
+  "copy": {
+    "message": "Kopijuoti",
+    "description": "Used for copying text to clipboard"
+  },
+  "retry": {
+    "message": "Bandyti dar kartą",
+    "description": "Used invalidating a ChatGPT answer"
+  },
+  "summarize": {
+    "message": "Apibendrinti",
+    "description": "Tab label"
+  },
+  "chat": {
+    "message": "Pokalbis",
+    "description": "Tab label"
+  },
+  "close": {
+    "message": "Uždaryti",
+    "description": "Used for closing the extension popup"
+  },
+  "chatgptLoggedIn": {
+    "message": "ChatGPT prisijungęs"
+  },
+  "chatgptNotLoggedIn": {
+    "message": "ChatGPT neprisijungęs"
+  },
+  "login": {
+    "message": "Prisijungti"
+  },
+  "useOpenAiApi": {
+    "message": "Naudokite savo OpenAI API raktą"
+  },
+  "originalTranscript": {
+    "message": "Transkripcija",
+    "description": "Tab label"
+  },
+  "summarizeText": {
+    "message": "Apibendrinti pasirinktą tekstą"
+  },
+  "summarizeAll": {
+    "message": "Apibendrinti viską"
+  },
+  "summarizeNextBatch": {
+    "message": "Apibendrinti kitą partiją"
+  },
+  "summarized": {
+    "message": "Apibendrinta"
+  },
+  "authenticateChatGPT": {
+    "message": "Prašome autentifikuotis naudojant ChatGPT"
+  },
+  "addOpenAIKey": {
+    "message": "Prašome pridėti savo OpenAI API raktą"
+  },
+  "addDeepSeekAPIKey": {
+    "message": "Prašome pridėti savo DeepSeek API raktą"
+  },
+  "ready": {
+    "message": "Paruošta"
+  },
+  "howToObtainKey": {
+    "message": "Kaip gauti API raktą"
+  },
+  "wrongApiKey": {
+    "message": "Nepavyko gauti modelių. Patikrinkite savo API raktą."
+  },
+  "showYoutubeButton": {
+    "message": "Rodyti YouTube apibendrinimo mygtuką"
+  },
+  "showSummarizeButton": {
+    "message": "Rodyti plūduriuojantį apibendrinimo mygtuką"
+  },
+  "summarizeFullText": {
+    "message": "Visada apibendrinti visą tekstą"
+  },
+  "availableAskQuestion": {
+    "message": "Prieinamas tik su OpenAI API tiekėju"
+  },
+  "askQuestion": {
+    "message": "Užduoti klausimą (Beta)"
+  },
+  "askQuestionIntro": {
+    "message": "Sveikas! 🤖 Aš čia, kad padėčiau atsakyti į klausimus apie šio puslapio turinį. Kaip galiu jums padėti šiandien?"
+  },
+  "summary": {
+    "message": "Santrauka"
+  },
+  "alertAskQuestion": {
+    "message": "Norėdami pasiekti šią funkciją, pasirinkite OpenAI API kaip savo tiekėją parinkčių puslapyje."
+  },
+  "suggestionOpenAI": {
+    "message": "Naudokite OpenAI API patikimesniems rezultatams!"
+  },
+  "timeoutError": {
+    "message": "Atsiprašome, jūsų apibendrinimo užklausa baigėsi laiku. Tai gali įvykti dėl tinklo uždelsimų arba didelio paslaugos poreikio. Bandykite pateikti užklausą vėliau."
+  },
+  "chatGPTwelcome": {
+    "message": "ChatGPT sąsaja (Numatytoji)"
+  },
+  "chatGPTperks": {
+    "message": "nemokamai ir lėtai"
+  },
+  "OpenAIwelcome": {
+    "message": "OpenAI API raktas"
+  },
+  "OpenAIperks": {
+    "message": "rekomenduojama, greitai (gaukite savo API raktą čia"
+  },
+  "DeepSeekAPIwelcome": {
+    "message": "DeepSeek API raktas"
+  },
+  "DeepSeekAPIperks": {
+    "message": "gaukite savo API raktą čia"
+  },
+  "DeepSeekChatWelcome": {
+    "message": "DeepSeek pokalbių sąsaja"
+  },
+  "DeepSeekChatPerks": {
+    "message": "nemokamai ir lėtai"
+  },
+  "here": {
+    "message": "čia"
+  },
+  "missingYoutubeTranscription": {
+    "message": "Dėl YouTube vaizdo įrašo transkripcijos nebuvimo, puslapio turinys buvo naudojamas šiai santraukai pateikti"
+  }
+}

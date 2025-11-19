@@ -1,0 +1,269 @@
+{
+  "appName": {
+    "message": "ChatGPT Summarize",
+    "description": "The name of the web-extension (45)"
+  },
+  "appDesc": {
+    "message": "ChatGPT tóm tắt hoặc chat với Website / Youtube sử dụng ChatGPT + DeepSeek. Summary * AI Summarize * OpenAI * PDF Summary * Claude",
+    "description": "The descirption of the web-extension (132)"
+  },
+  "defaultQuestion": {
+    "message": "Đầu ra của bạn nên sử dụng mẫu sau:\n- Emoji Bulletpoint\n\nTóm tắt văn bản tôi đưa cho bạn với số lượng điểm đạn ngắn gọn phù hợp. Chọn emoji phù hợp cho mỗi điểm đạn. Câu trả lời của bạn nên bằng {{SELECTED_LANGUAGE}}. Sử dụng nội dung sau: {{CONTENT}}",
+    "description": "The default question used for ChatGPT"
+  },
+  "defaultQuestionGPT4": {
+    "message": "Tóm gọn văn bản được cung cấp thành các điểm đạn ngắn gọn, chọn emoji phù hợp cho từng điểm, và trả lời bằng {{SELECTED_LANGUAGE}} sử dụng nội dung: {{CONTENT}}",
+    "description": "The default question used for ChatGPT4"
+  },
+  "defaultSystemMessage": {
+    "message": "",
+    "description": "The default System Message used for ChatGPT"
+  },
+  "thankYouForInstalling": {
+    "message": "Cảm ơn bạn đã cài đặt",
+    "description": "Thank you message after installing the extension"
+  },
+  "pinExtensionTutorial": {
+    "message": "Ghim tiện ích mở rộng này vào thanh công cụ của bạn để bắt đầu.",
+    "description": "Tutorial message for pinning the extension to the toolbar"
+  },
+  "selectProviderToSummarize": {
+    "message": "Vui lòng chọn Nhà cung cấp của bạn để tóm tắt"
+  },
+  "installSuccess": {
+    "message": "Sẵn sàng! Tóm tắt bất kỳ trang web hoặc video Youtube nào chỉ bằng một cú nhấp chuột sử dụng ChatGPT Suite! Liên hệ với chúng tôi cho bất kỳ <a>câu hỏi hoặc phản hồi</a> nào. Chúc bạn tóm tắt vui vẻ!",
+    "description": "Success message after installing the extension"
+  },
+  "happySumarize": {
+    "message": "Tóm tắt vui vẻ"
+  },
+  "options": {
+    "message": "Tùy chọn",
+    "description": "Used for opening the extension options"
+  },
+  "prompt": {
+    "message": "Lời nhắc",
+    "description": "Used for describing the prompt settings section"
+  },
+  "misc": {
+    "message": "Khác",
+    "description": "Used for describing the misc settings section"
+  },
+  "memory": {
+    "message": "Bộ nhớ",
+    "description": "Used for describing the memory settings section"
+  },
+  "appearance": {
+    "message": "Giao diện",
+    "description": "Used for describing the appearance settings section"
+  },
+  "behaviour": {
+    "message": "Hành vi",
+    "description": "Used for describing the behaviour settings section"
+  },
+  "chatGPTProviderDescription": {
+    "message": "API cung cấp năng lượng cho ChatGPT webapp, miễn phí, nhưng đôi khi không ổn định",
+    "description": "Description of the ChatGPT API Provider"
+  },
+  "openAIProviderDescription": {
+    "message": "API chính thức của OpenAI, ổn định hơn, tính phí theo sử dụng",
+    "description": "Description of the OpenAI API Provider"
+  },
+  "apiKey": {
+    "message": "Khóa API",
+    "description": "Used for selecting the API Key"
+  },
+  "question": {
+    "message": "Câu hỏi",
+    "description": "Used for selecting the question"
+  },
+  "systemMessage": {
+    "message": "Thông điệp hệ thống",
+    "description": "Used for selecting the System Message"
+  },
+  "model": {
+    "message": "Mô hình",
+    "description": "Used for selecting the model"
+  },
+  "save": {
+    "message": "Lưu",
+    "description": "Used for saving the extension options"
+  },
+  "reset": {
+    "message": "Đặt lại",
+    "description": "Used for resetting the extension options"
+  },
+  "aiProvider": {
+    "message": "Nhà cung cấp AI",
+    "description": "Used for selecting the AI provider"
+  },
+  "loading": {
+    "message": "Đang tải...",
+    "description": "Status message used when loading"
+  },
+  "moreInfo": {
+    "message": "Thêm thông tin",
+    "description": "Used for opening a new modal with more info"
+  },
+  "requestOpenAIProvider": {
+    "message": "OpenAI yêu cầu vượt qua kiểm tra bảo mật thỉnh thoảng. Nếu điều này tiếp tục xảy ra, hãy đổi nhà cung cấp AI thành OpenAI API trong tùy chọn tiện ích mở rộng.",
+    "description": "Status message when failed to load response from OpenAI second time in a row"
+  },
+  "waitingForChatGPTResponse": {
+    "message": "Đang chờ phản hồi từ ChatGPT...",
+    "description": "Status message used when waiting for ChatGPT response"
+  },
+  "failedToLoadResponseFromChatGPT": {
+    "message": "Không thể tải phản hồi từ ChatGPT",
+    "description": "Status message used when failed to load response from ChatGPT"
+  },
+  "extractingPageContent": {
+    "message": "Đang trích xuất nội dung trang...",
+    "description": "Status message used when extracting page content"
+  },
+  "info": {
+    "message": "Thông tin"
+  },
+  "tryItNow": {
+    "message": "Thử ngay",
+    "description": "Action button used after successful installation"
+  },
+  "rateExtensionInWebstore": {
+    "message": "Thích tiện ích mở rộng này? Hãy cho chúng tôi đánh giá 5 sao"
+  },
+  "recommendExtension": {
+    "message": "với bản tóm tắt? Vui lòng chia sẻ <a>tiện ích mở rộng</a>"
+  },
+  "refreshOpenAILogin": {
+    "message": "Vui lòng đăng nhập và vượt qua kiểm tra Cloudflare tại <a>chatgpt.com</a>"
+  },
+  "refreshDeepSeekChatLogin": {
+    "message": "Vui lòng đăng nhập và vượt qua kiểm tra Cloudflare tại <a>chat.deepseek.com</a>"
+  },
+  "copy": {
+    "message": "Sao chép",
+    "description": "Used for copying text to clipboard"
+  },
+  "retry": {
+    "message": "Thử lại",
+    "description": "Used invalidating a ChatGPT answer"
+  },
+  "summarize": {
+    "message": "Tóm tắt",
+    "description": "Tab label"
+  },
+  "chat": {
+    "message": "Trò chuyện",
+    "description": "Tab label"
+  },
+  "close": {
+    "message": "Đóng",
+    "description": "Used for closing the extension popup"
+  },
+  "chatgptLoggedIn": {
+    "message": "Đã đăng nhập ChatGPT"
+  },
+  "chatgptNotLoggedIn": {
+    "message": "Chưa đăng nhập ChatGPT"
+  },
+  "login": {
+    "message": "Đăng nhập"
+  },
+  "useOpenAiApi": {
+    "message": "Sử dụng Khóa OpenAI API của bạn"
+  },
+  "originalTranscript": {
+    "message": "Bản ghi",
+    "description": "Tab label"
+  },
+  "summarizeText": {
+    "message": "Tóm tắt văn bản đã chọn"
+  },
+  "summarizeAll": {
+    "message": "Tóm tắt tất cả"
+  },
+  "summarizeNextBatch": {
+    "message": "Tóm tắt lô tiếp theo"
+  },
+  "summarized": {
+    "message": "Đã tóm tắt"
+  },
+  "authenticateChatGPT": {
+    "message": "Vui lòng xác thực bằng ChatGPT"
+  },
+  "addOpenAIKey": {
+    "message": "Vui lòng thêm Khóa OpenAI API của bạn"
+  },
+  "addDeepSeekAPIKey": {
+    "message": "Vui lòng thêm Khóa DeepSeek API của bạn"
+  },
+  "ready": {
+    "message": "Sẵn sàng"
+  },
+  "howToObtainKey": {
+    "message": "Cách lấy Khóa API của bạn"
+  },
+  "wrongApiKey": {
+    "message": "Không thể tải các mô hình. Vui lòng kiểm tra khóa API của bạn."
+  },
+  "showYoutubeButton": {
+    "message": "Hiển thị nút tóm tắt YouTube"
+  },
+  "showSummarizeButton": {
+    "message": "Hiển thị nút tóm tắt nổi"
+  },
+  "summarizeFullText": {
+    "message": "Luôn tóm tắt toàn bộ văn bản"
+  },
+  "availableAskQuestion": {
+    "message": "Chỉ có sẵn với nhà cung cấp OpenAI API"
+  },
+  "askQuestion": {
+    "message": "Đặt câu hỏi (Beta)"
+  },
+  "askQuestionIntro": {
+    "message": "Xin chào! 🤖 Tôi ở đây để giúp trả lời bất kỳ câu hỏi nào bạn có về nội dung của trang này. Tôi có thể hỗ trợ bạn như thế nào hôm nay?"
+  },
+  "summary": {
+    "message": "Tóm tắt"
+  },
+  "alertAskQuestion": {
+    "message": "Để truy cập tính năng này, vui lòng chọn OpenAI API làm nhà cung cấp của bạn trong trang tùy chọn."
+  },
+  "suggestionOpenAI": {
+    "message": "Sử dụng OpenAI API để có kết quả đáng tin cậy hơn!"
+  },
+  "timeoutError": {
+    "message": "Xin lỗi, yêu cầu tóm tắt của bạn đã hết thời gian. Điều này có thể xảy ra do độ trễ mạng hoặc nhu cầu dịch vụ cao. Vui lòng thử gửi lại yêu cầu của bạn sau."
+  },
+  "chatGPTwelcome": {
+    "message": "Giao diện ChatGPT (Mặc định)"
+  },
+  "chatGPTperks": {
+    "message": "miễn phí & chậm"
+  },
+  "OpenAIwelcome": {
+    "message": "Khóa OpenAI API"
+  },
+  "OpenAIperks": {
+    "message": "khuyến nghị, nhanh (lấy Khóa API của bạn tại đây"
+  },
+  "DeepSeekAPIwelcome": {
+    "message": "Khóa DeepSeek API"
+  },
+  "DeepSeekAPIperks": {
+    "message": "lấy Khóa API của bạn tại đây"
+  },
+  "DeepSeekChatWelcome": {
+    "message": "Giao diện DeepSeek Chat"
+  },
+  "DeepSeekChatPerks": {
+    "message": "miễn phí & chậm"
+  },
+  "here": {
+    "message": "tại đây"
+  },
+  "missingYoutubeTranscription": {
+    "message": "Do thiếu phiên âm trong video YouTube, nội dung trang đã được sử dụng để cung cấp bản tóm tắt này"
+  }
+}

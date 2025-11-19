@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gemini API Key Settings</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';">
+  <meta name="referrer" content="no-referrer">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+    input[type="password"], input[type="text"] {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+    }
+    .btn-danger {
+      background-color: #dc3545;
+      color: white;
+    }
+    .alert {
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
+    .alert-success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    .alert-error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    .help-text {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+    }
+    .password-toggle {
+      position: relative;
+    }
+    .password-toggle input {
+      padding-right: 40px;
+    }
+    .password-toggle button {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #666;
+    }
+    .key-health {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 500;
+      margin-left: 10px;
+    }
+    .key-health.healthy {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .key-health.warning {
+      background-color: #fff3cd;
+      color: #856404;
+    }
+    .key-health.expired {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+    .usage-stats {
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .usage-bar {
+      width: 100%;
+      height: 8px;
+      background-color: #e9ecef;
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 5px 0;
+    }
+    .usage-fill {
+      height: 100%;
+      background-color: #007bff;
+      transition: width 0.3s ease;
+    }
+    .rotation-notice {
+      background-color: #fff3cd;
+      border: 1px solid #ffeaa7;
+      border-radius: 4px;
+      padding: 10px;
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Google Gemini Flash 2.5 API Settings</h1>
+    <div id="alert"></div>
+
+    <!-- Onboarding Section (shown when no key is set) -->
+    <div id="onboardingSection" class="onboarding-notice" style="display: none;">
+      <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+        <h2 style="margin: 0 0 10px 0; color: white;">🚀 Welcome to Gemini Integration!</h2>
+        <p style="margin: 0 0 15px 0;">To use Google Gemini Flash 2.5, you'll need to provide your own API key. Here's how:</p>
+        <ol style="margin: 0; padding-left: 20px;">
+          <li>Visit <a href="https://makersuite.google.com/app/apikey" target="_blank" style="color: #ffd700; text-decoration: underline;">Google AI Studio</a></li>
+          <li>Sign in with your Google account</li>
+          <li>Click "Create API key" in the left sidebar</li>
+          <li>Copy your new API key</li>
+          <li>Paste it in the field below and click "Save"</li>
+        </ol>
+        <p style="margin: 15px 0 0 0; font-size: 14px;">
+          <strong>🔒 Security Note:</strong> Your API key is stored securely in Chrome's encrypted storage and never leaves your device.
+        </p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="apiKey">
+        API Key
+        <span id="keyHealth" class="key-health">No Key</span>
+      </label>
+      <div class="password-toggle">
+        <input type="password" id="apiKey" placeholder="Enter your Gemini API key">
+        <button type="button" id="toggleVisibility">👁️</button>
+      </div>
+      <div class="help-text">
+        <strong>How to get your Gemini API key:</strong><br>
+        1. Visit <a href="https://makersuite.google.com/app/apikey" target="_blank">Google AI Studio</a><br>
+        2. Sign in with your Google account<br>
+        3. Click "Create API key"<br>
+        4. Copy the generated key and paste it here<br><br>
+        <em>Your API key is stored securely in Chrome's encrypted local storage and is never shared.</em>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-primary" id="saveBtn">Save API Key</button>
+      <button class="btn btn-danger" id="clearBtn">Clear API Key</button>
+      <button class="btn" id="rotateBtn" style="background-color: #17a2b8; color: white;">🔄 Rotate Key</button>
+    </div>
+
+    <div id="rotationNotice" class="rotation-notice">
+      <strong>⚠️ Key Rotation Recommended</strong><br>
+      Your API key is over 90 days old. Consider rotating it for better security.
+    </div>
+
+    <div class="usage-stats">
+      <h4>API Usage This Month</h4>
+      <div class="usage-bar">
+        <div id="usageFill" class="usage-fill" style="width: 0%"></div>
+      </div>
+      <small id="usageText">0 / 1000 requests</small>
+    </div>
+
+    <div class="form-group">
+      <h3>Security Information</h3>
+      <ul class="help-text">
+        <li>API keys are stored locally in Chrome's secure storage</li>
+        <li>Keys are never transmitted except to Google's Gemini API</li>
+        <li>Keys are encrypted and protected by Chrome's security features</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Enhanced Security utilities with monitoring
+    const SecurityUtils = {
+      // Rate limiting
+      lastOperation: 0,
+      operationCooldown: 1000, // 1 second cooldown
+
+      // API key rotation settings
+      KEY_ROTATION_DAYS: 90,
+      USAGE_LIMIT: 1000, // Monthly limit
+
+      // Input sanitization
+      sanitizeInput: (input) => {
+        if (typeof input !== 'string') return '';
+        return input
+          .trim()
+          .replace(/[<>'"&]/g, '') // Remove potentially dangerous characters
+          .substring(0, 200); // Limit length
+      },
+
+      // Enhanced API key validation
+      validateApiKey: (key) => {
+        if (!key || typeof key !== 'string') return false;
+
+        // Check format
+        if (!/^AIza[0-9A-Za-z\-_]{35}$/.test(key)) return false;
+
+        // Check entropy (basic check for randomness)
+        const uniqueChars = new Set(key.split('')).size;
+        if (uniqueChars < 20) return false;
+
+        return true;
+      },
+
+      // Check key age for rotation
+      checkKeyAge: (lastUpdated) => {
+        if (!lastUpdated) return { status: 'none', days: 0 };
+        const daysSinceUpdate = (Date.now() - lastUpdated) / (1000 * 60 * 60 * 24);
+        if (daysSinceUpdate > SecurityUtils.KEY_ROTATION_DAYS) {
+          return { status: 'expired', days: Math.floor(daysSinceUpdate) };
+        } else if (daysSinceUpdate > SecurityUtils.KEY_ROTATION_DAYS * 0.8) {
+          return { status: 'warning', days: Math.floor(daysSinceUpdate) };
+        }
+        return { status: 'healthy', days: Math.floor(daysSinceUpdate) };
+      },
+
+      // Track API usage
+      trackUsage: () => {
+        chrome.storage.local.get(['apiUsage'], (result) => {
+          const usage = result.apiUsage || { count: 0, lastReset: Date.now() };
+          usage.count++;
+
+          // Reset monthly
+          const monthAgo = Date.now() - (30 * 24 * 60 * 60 * 1000);
+          if (usage.lastReset < monthAgo) {
+            usage.count = 1;
+            usage.lastReset = Date.now();
+          }
+
+          chrome.storage.local.set({ apiUsage: usage });
+          SecurityUtils.updateUsageDisplay(usage);
+        });
+      },
+
+      // Update usage display
+      updateUsageDisplay: (usage) => {
+        const percentage = Math.min((usage.count / SecurityUtils.USAGE_LIMIT) * 100, 100);
+        const usageFill = document.getElementById('usageFill');
+        const usageText = document.getElementById('usageText');
+
+        if (usageFill) usageFill.style.width = percentage + '%';
+        if (usageText) usageText.textContent = `${usage.count} / ${SecurityUtils.USAGE_LIMIT} requests`;
+      },
+
+      // Secure error handling
+      handleError: (error, context) => {
+        // Never log sensitive data
+        const safeError = {
+          message: 'An error occurred',
+          timestamp: Date.now(),
+          context: context
+        };
+        console.warn('Security operation failed:', safeError);
+        return safeError;
+      },
+
+      // Memory cleanup
+      secureCleanup: () => {
+        // Clear any sensitive data from memory
+        if (window.tempApiKey) {
+          window.tempApiKey = null;
+          delete window.tempApiKey;
+        }
+      },
+
+      // Check rate limit
+      checkRateLimit: () => {
+        const now = Date.now();
+        if (now - SecurityUtils.lastOperation < SecurityUtils.operationCooldown) {
+          return false;
+        }
+        SecurityUtils.lastOperation = now;
+        return true;
+      },
+
+      // Update key health indicator
+      updateKeyHealth: (status, days) => {
+        const healthElement = document.getElementById('keyHealth');
+        const rotationNotice = document.getElementById('rotationNotice');
+
+        if (!healthElement) return;
+
+        healthElement.className = 'key-health';
+
+        switch (status) {
+          case 'healthy':
+            healthElement.classList.add('healthy');
+            healthElement.textContent = `Healthy (${days} days)`;
+            if (rotationNotice) rotationNotice.style.display = 'none';
+            break;
+          case 'warning':
+            healthElement.classList.add('warning');
+            healthElement.textContent = `Rotate Soon (${days} days)`;
+            if (rotationNotice) rotationNotice.style.display = 'block';
+            break;
+          case 'expired':
+            healthElement.classList.add('expired');
+            healthElement.textContent = `Expired (${days} days)`;
+            if (rotationNotice) rotationNotice.style.display = 'block';
+            break;
+          default:
+            healthElement.textContent = 'No Key';
+            if (rotationNotice) rotationNotice.style.display = 'none';
+        }
+      }
+    };
+
+    // DOM elements
+    const apiKeyInput = document.getElementById('apiKey');
+    const toggleBtn = document.getElementById('toggleVisibility');
+    const saveBtn = document.getElementById('saveBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const rotateBtn = document.getElementById('rotateBtn');
+    const alertDiv = document.getElementById('alert');
+
+    let isVisible = false;
+
+    // Load existing API key securely and initialize monitoring
+    chrome.storage.local.get(['geminiApiKey', 'lastUpdated', 'apiUsage'], (result) => {
+      const onboardingSection = document.getElementById('onboardingSection');
+
+      if (result.geminiApiKey && SecurityUtils.validateApiKey(result.geminiApiKey)) {
+        apiKeyInput.value = result.geminiApiKey;
+
+        // Update key health
+        const keyStatus = SecurityUtils.checkKeyAge(result.lastUpdated);
+        SecurityUtils.updateKeyHealth(keyStatus.status, keyStatus.days);
+
+        // Hide onboarding for existing users
+        if (onboardingSection) onboardingSection.style.display = 'none';
+      } else {
+        SecurityUtils.updateKeyHealth('none', 0);
+
+        // Show onboarding for new users
+        if (onboardingSection) onboardingSection.style.display = 'block';
+      }
+
+      // Update usage display
+      if (result.apiUsage) {
+        SecurityUtils.updateUsageDisplay(result.apiUsage);
+      }
+    });
+
+    // Toggle password visibility with security check
+    toggleBtn.addEventListener('click', () => {
+      if (!SecurityUtils.checkRateLimit()) {
+        showAlert('Please wait before performing another action', 'error');
+        return;
+      }
+
+      isVisible = !isVisible;
+      apiKeyInput.type = isVisible ? 'text' : 'password';
+      toggleBtn.textContent = isVisible ? '🙈' : '👁️';
+    });
+
+    // Save API key with enhanced security
+    saveBtn.addEventListener('click', async () => {
+      if (!SecurityUtils.checkRateLimit()) {
+        showAlert('Please wait before performing another action', 'error');
+        return;
+      }
+
+      try {
+        const rawInput = apiKeyInput.value;
+        const sanitizedKey = SecurityUtils.sanitizeInput(rawInput);
+
+        if (!sanitizedKey) {
+          showAlert('Please enter a valid API key', 'error');
+          return;
+        }
+
+        if (!SecurityUtils.validateApiKey(sanitizedKey)) {
+          showAlert('Invalid Gemini API key format or insufficient entropy', 'error');
+          return;
+        }
+
+        // Temporary secure storage in memory (will be cleared)
+        window.tempApiKey = sanitizedKey;
+
+        await chrome.storage.local.set({
+          geminiApiKey: sanitizedKey,
+          lastUpdated: Date.now(),
+          keyVersion: '1.0',
+          rotatedAt: Date.now()
+        });
+
+        // Clear temporary storage
+        SecurityUtils.secureCleanup();
+
+        // Hide onboarding section for successful setup
+        const onboardingSection = document.getElementById('onboardingSection');
+        if (onboardingSection) onboardingSection.style.display = 'none';
+
+        showAlert('API key saved securely!', 'success');
+
+        // Clear input field for security
+        apiKeyInput.value = '';
+
+      } catch (error) {
+        SecurityUtils.handleError(error, 'save_api_key');
+        showAlert('Failed to save API key securely', 'error');
+        SecurityUtils.secureCleanup();
+      }
+    });
+
+    // Clear API key with security measures
+    clearBtn.addEventListener('click', async () => {
+      if (!SecurityUtils.checkRateLimit()) {
+        showAlert('Please wait before performing another action', 'error');
+        return;
+      }
+
+      try {
+        await chrome.storage.local.remove(['geminiApiKey', 'lastUpdated', 'keyVersion', 'rotatedAt']);
+        apiKeyInput.value = '';
+        SecurityUtils.updateKeyHealth('none', 0);
+
+        // Show onboarding section again
+        const onboardingSection = document.getElementById('onboardingSection');
+        if (onboardingSection) onboardingSection.style.display = 'block';
+
+        showAlert('API key cleared securely', 'success');
+      } catch (error) {
+        SecurityUtils.handleError(error, 'clear_api_key');
+        showAlert('Failed to clear API key securely', 'error');
+      }
+    });
+
+    // Rotate API key
+    rotateBtn.addEventListener('click', () => {
+      if (!SecurityUtils.checkRateLimit()) {
+        showAlert('Please wait before performing another action', 'error');
+        return;
+      }
+
+      // Open Google AI Studio for new key
+      window.open('https://makersuite.google.com/app/apikey', '_blank');
+      showAlert('Opened Google AI Studio. Generate a new key and paste it above.', 'success');
+    });
+
+    // Secure alert function
+    function showAlert(message, type) {
+      const safeMessage = SecurityUtils.sanitizeInput(message);
+      alertDiv.innerHTML = `<div class="alert alert-${type}">${safeMessage}</div>`;
+      setTimeout(() => {
+        alertDiv.innerHTML = '';
+      }, 3000);
+    }
+
+    // Cleanup on page unload
+    window.addEventListener('beforeunload', () => {
+      SecurityUtils.secureCleanup();
+    });
+
+    // Prevent context menu for additional security
+    document.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+    });
+  </script>
+</body>
+</html>

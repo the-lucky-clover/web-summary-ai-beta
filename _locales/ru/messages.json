@@ -1,0 +1,269 @@
+{
+  "appName": {
+    "message": "ChatGPT Summarize",
+    "description": "The name of the web-extension (45)"
+  },
+  "appDesc": {
+    "message": "Резюме ChatGPT или чат с веб-сайтами/Youtube используя ChatGPT + DeepSeek. Резюме * ИИ * OpenAI * PDF * Claude",
+    "description": "The descirption of the web-extension (132)"
+  },
+  "defaultQuestion": {
+    "message": "Ваш ответ должен использовать следующий шаблон:\n- Эмодзи Пункт списка\n\nРезюмируйте текст, который я вам даю, в подходящем количестве кратких пунктов. Выберите подходящий эмодзи для каждого пункта. Ваш ответ должен быть на {{SELECTED_LANGUAGE}}. Используйте следующее содержание: {{CONTENT}}",
+    "description": "The default question used for ChatGPT"
+  },
+  "defaultQuestionGPT4": {
+    "message": "Сжать предоставленный текст в краткие пункты, выбирая подходящий эмодзи для каждого, и отвечайте на {{SELECTED_LANGUAGE}} используя содержание: {{CONTENT}}",
+    "description": "The default question used for ChatGPT4"
+  },
+  "defaultSystemMessage": {
+    "message": "",
+    "description": "The default System Message used for ChatGPT"
+  },
+  "thankYouForInstalling": {
+    "message": "Спасибо за установку",
+    "description": "Thank you message after installing the extension"
+  },
+  "pinExtensionTutorial": {
+    "message": "Закрепите это расширение на панели инструментов, чтобы начать.",
+    "description": "Tutorial message for pinning the extension to the toolbar"
+  },
+  "selectProviderToSummarize": {
+    "message": "Пожалуйста, выберите вашего Провайдера для резюмирования"
+  },
+  "installSuccess": {
+    "message": "Готово! Резюмируйте любую веб-страницу или видео Youtube одним кликом, используя ChatGPT Suite! Свяжитесь с нами по любым <a>вопросам или отзывам</a>. Удачного резюмирования!",
+    "description": "Success message after installing the extension"
+  },
+  "happySumarize": {
+    "message": "Удачного резюмирования"
+  },
+  "options": {
+    "message": "Опции",
+    "description": "Used for opening the extension options"
+  },
+  "prompt": {
+    "message": "Промпт",
+    "description": "Used for describing the prompt settings section"
+  },
+  "misc": {
+    "message": "Разное",
+    "description": "Used for describing the misc settings section"
+  },
+  "memory": {
+    "message": "Память",
+    "description": "Used for describing the memory settings section"
+  },
+  "appearance": {
+    "message": "Внешний вид",
+    "description": "Used for describing the appearance settings section"
+  },
+  "behaviour": {
+    "message": "Поведение",
+    "description": "Used for describing the behaviour settings section"
+  },
+  "chatGPTProviderDescription": {
+    "message": "API, который питает веб-приложение ChatGPT, бесплатный, но иногда нестабильный",
+    "description": "Description of the ChatGPT API Provider"
+  },
+  "openAIProviderDescription": {
+    "message": "Официальный API OpenAI, более стабильный, взимает плату за использование",
+    "description": "Description of the OpenAI API Provider"
+  },
+  "apiKey": {
+    "message": "Ключ API",
+    "description": "Used for selecting the API Key"
+  },
+  "question": {
+    "message": "Вопрос",
+    "description": "Used for selecting the question"
+  },
+  "systemMessage": {
+    "message": "Системное сообщение",
+    "description": "Used for selecting the System Message"
+  },
+  "model": {
+    "message": "Модель",
+    "description": "Used for selecting the model"
+  },
+  "save": {
+    "message": "Сохранить",
+    "description": "Used for saving the extension options"
+  },
+  "reset": {
+    "message": "Сбросить",
+    "description": "Used for resetting the extension options"
+  },
+  "aiProvider": {
+    "message": "Провайдер ИИ",
+    "description": "Used for selecting the AI provider"
+  },
+  "loading": {
+    "message": "Загрузка...",
+    "description": "Status message used when loading"
+  },
+  "moreInfo": {
+    "message": "Больше информации",
+    "description": "Used for opening a new modal with more info"
+  },
+  "requestOpenAIProvider": {
+    "message": "OpenAI требует время от времени проходить проверку безопасности. Если это продолжается, смените провайдера ИИ на API OpenAI в настройках расширения.",
+    "description": "Status message when failed to load response from OpenAI second time in a row"
+  },
+  "waitingForChatGPTResponse": {
+    "message": "Ожидание ответа от ChatGPT...",
+    "description": "Status message used when waiting for ChatGPT response"
+  },
+  "failedToLoadResponseFromChatGPT": {
+    "message": "Не удалось загрузить ответ от ChatGPT",
+    "description": "Status message used when failed to load response from ChatGPT"
+  },
+  "extractingPageContent": {
+    "message": "Извлечение содержимого страницы...",
+    "description": "Status message used when extracting page content"
+  },
+  "info": {
+    "message": "Информация"
+  },
+  "tryItNow": {
+    "message": "Попробовать сейчас",
+    "description": "Action button used after successful installation"
+  },
+  "rateExtensionInWebstore": {
+    "message": "Нравится это расширение? Поставьте нам 5 звёзд"
+  },
+  "recommendExtension": {
+    "message": "с резюме? Пожалуйста, поделитесь <a>расширением</a>"
+  },
+  "refreshOpenAILogin": {
+    "message": "Пожалуйста, войдите в систему и пройдите проверку Cloudflare на <a>chatgpt.com</a>"
+  },
+  "refreshDeepSeekChatLogin": {
+    "message": "Пожалуйста, войдите в систему и пройдите проверку Cloudflare на <a>chat.deepseek.com</a>"
+  },
+  "copy": {
+    "message": "Копировать",
+    "description": "Used for copying text to clipboard"
+  },
+  "retry": {
+    "message": "Повторить",
+    "description": "Used invalidating a ChatGPT answer"
+  },
+  "summarize": {
+    "message": "Резюмировать",
+    "description": "Tab label"
+  },
+  "chat": {
+    "message": "Чат",
+    "description": "Tab label"
+  },
+  "close": {
+    "message": "Закрыть",
+    "description": "Used for closing the extension popup"
+  },
+  "chatgptLoggedIn": {
+    "message": "ChatGPT вошёл в систему"
+  },
+  "chatgptNotLoggedIn": {
+    "message": "ChatGPT не вошёл в систему"
+  },
+  "login": {
+    "message": "Войти"
+  },
+  "useOpenAiApi": {
+    "message": "Используйте ваш ключ API OpenAI"
+  },
+  "originalTranscript": {
+    "message": "Транскрипт",
+    "description": "Tab label"
+  },
+  "summarizeText": {
+    "message": "Резюмировать выделенный текст"
+  },
+  "summarizeAll": {
+    "message": "Резюмировать всё"
+  },
+  "summarizeNextBatch": {
+    "message": "Резюмировать следующую партию"
+  },
+  "summarized": {
+    "message": "Резюмировано"
+  },
+  "authenticateChatGPT": {
+    "message": "Пожалуйста, аутентифицируйтесь используя ChatGPT"
+  },
+  "addOpenAIKey": {
+    "message": "Пожалуйста, добавьте ваш ключ API OpenAI"
+  },
+  "addDeepSeekAPIKey": {
+    "message": "Пожалуйста, добавьте ваш ключ API DeepSeek"
+  },
+  "ready": {
+    "message": "Готов"
+  },
+  "howToObtainKey": {
+    "message": "Как получить ваш ключ API"
+  },
+  "wrongApiKey": {
+    "message": "Не удалось получить модели. Пожалуйста, проверьте ваш ключ API."
+  },
+  "showYoutubeButton": {
+    "message": "Показать кнопку резюме YouTube"
+  },
+  "showSummarizeButton": {
+    "message": "Показать плавающую кнопку резюме"
+  },
+  "summarizeFullText": {
+    "message": "Всегда резюмировать полный текст"
+  },
+  "availableAskQuestion": {
+    "message": "Доступно только с провайдером API OpenAI"
+  },
+  "askQuestion": {
+    "message": "Задать вопрос (Бета)"
+  },
+  "askQuestionIntro": {
+    "message": "Привет! 🤖 Я здесь, чтобы помочь ответить на любые вопросы о содержании этой страницы. Как я могу помочь вам сегодня?"
+  },
+  "summary": {
+    "message": "Резюме"
+  },
+  "alertAskQuestion": {
+    "message": "Для доступа к этой функции, пожалуйста, выберите API OpenAI как вашего провайдера на странице настроек."
+  },
+  "suggestionOpenAI": {
+    "message": "Используйте API OpenAI для более надёжных результатов!"
+  },
+  "timeoutError": {
+    "message": "Извините, ваш запрос на резюмирование истёк. Это может произойти из-за задержек в сети или высокого спроса на сервис. Пожалуйста, попробуйте отправить ваш запрос снова позже."
+  },
+  "chatGPTwelcome": {
+    "message": "Интерфейс ChatGPT (По умолчанию)"
+  },
+  "chatGPTperks": {
+    "message": "бесплатно и медленно"
+  },
+  "OpenAIwelcome": {
+    "message": "Ключ API OpenAI"
+  },
+  "OpenAIperks": {
+    "message": "рекомендуется, быстро (получите ваш ключ API здесь"
+  },
+  "DeepSeekAPIwelcome": {
+    "message": "Ключ API DeepSeek"
+  },
+  "DeepSeekAPIperks": {
+    "message": "получите ваш ключ API здесь"
+  },
+  "DeepSeekChatWelcome": {
+    "message": "Интерфейс чата DeepSeek"
+  },
+  "DeepSeekChatPerks": {
+    "message": "бесплатно и медленно"
+  },
+  "here": {
+    "message": "здесь"
+  },
+  "missingYoutubeTranscription": {
+    "message": "Из-за отсутствия транскрипции в видео YouTube, содержание страницы было использовано для предоставления этого резюме"
+  }
+}
