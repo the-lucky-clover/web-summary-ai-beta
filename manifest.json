@@ -2,13 +2,13 @@
   "name": "Web Summary AI",
   "description": "AI-powered web page summarization with custom prompts. Private and secure - no data collection.",
   "default_locale": "en",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "manifest_version": 3,
   "icons": {
-    "16": "logo-16.png",
-    "32": "logo-32.png",
-    "48": "logo-48.png",
-    "128": "logo-128.png"
+    "16": "icons/logo-16.png",
+    "32": "icons/logo-32.png",
+    "48": "icons/logo-48.png",
+    "128": "icons/logo-128.png"
   },
   "permissions": [
     "storage",
@@ -24,10 +24,10 @@
   },
   "action": {
     "default_icon": {
-      "16": "logo-16.png",
-      "32": "logo-32.png",
-      "48": "logo-48.png",
-      "128": "logo-128.png"
+      "16": "icons/logo-16.png",
+      "32": "icons/logo-32.png",
+      "48": "icons/logo-48.png",
+      "128": "icons/logo-128.png"
     },
     "default_popup": "popup/index.html"
   },
